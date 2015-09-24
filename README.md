@@ -9,4 +9,4 @@ Time: Ayrton José, Emmerson Oseildo, Júlio Alexandre, Júlio Toscano, Micael S
 
 
 
-Outras informações:
+Outras informações: A aplicação será desenvolvida em Ruby on Rails FrameWork, no controle de versão e repositório será utilizado GitHub e para o gerenciamentos das atividades GitHub + Zenhub.
