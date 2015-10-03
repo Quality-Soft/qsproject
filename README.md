@@ -5,8 +5,7 @@ Projeto da disciplina de engenharia de Software
 Características: mei-a-MEI é um aplicação web voltada para o MEI (Micro Empreendedor Individual). Nela os Empreendedores dispoem de um local para expor seus trabalhos, onde estes poderão ser validados pelos seus clientes, dessa forma gerando um feedback contínuo além de ampliar o horizonte comercial.
 
 
-Time e Funções: Ayrton José, Emmerson Oseildo, Júlio Alexandre, Júlio Toscano, Micael Souza e Pedro Henrique
-
+Time e Funções: 
 
 Micael Santos   |  Gerente de projeto, teste e dba
 
@@ -19,8 +18,6 @@ Júlio Melo      |  Desenvolvedor  Back-End e Teste
 Pedro Henrique  |  DataBase Developer e programador
 
 Ayrton França   |  Desenvolvedor Front-End e administrativo
-
-Leticia Gomes   |  Desenvolvedora e administrativo
 
 
 
