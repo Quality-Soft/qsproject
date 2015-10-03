@@ -9,11 +9,17 @@ Time e Funções: Ayrton José, Emmerson Oseildo, Júlio Alexandre, Júlio Tosca
 
 
 Micael Santos   |  Gerente de projeto, teste e dba
+
 Júlio Toscano   |  Desenvolvedor Front-End e adjunto de projeto
+
 Emmerson Santos |  Desenvolvedor  Back-End e Teste
+
 Júlio Melo      |  Desenvolvedor  Back-End e Teste
+
 Pedro Henrique  |  DataBase Developer e programador
-Ayrton França   |  Desenvolvedor Front-End e administrativo  
+
+Ayrton França   |  Desenvolvedor Front-End e administrativo
+
 Leticia Gomes   |  Desenvolvedora e administrativo
 
 
