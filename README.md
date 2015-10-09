@@ -4,6 +4,12 @@ Projeto da disciplina de engenharia de Software
 
 Características: mei-a-MEI é um aplicação web voltada para o MEI (Micro Empreendedor Individual). Nela os Empreendedores dispoem de um local para disponibilizar seus trabalhos, onde estes poderão ser visualizados e selecionados pelos seus clientes, dessa forma gerando um feedback contínuo além de ampliar o horizonte comercial da localidade.
 
+- Adicionar comentário
+- Fazer avaliação
+- Procurar por categoria
+- Procurar por localização
+- Visualizar informações
+
 
 Time e Funções: 
 
