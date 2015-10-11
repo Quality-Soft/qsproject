@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 Started GET "/" for 150.161.2.202 at 2015-10-09 23:06:13 +0000
@@ -109,15 +108,3 @@ Cannot render console from 150.161.2.202! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 150.161.2.202 at 2015-10-09 23:08:44 +0000
 Cannot render console from 150.161.2.202! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-=======
-  [1m[36m (20.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
-  [1m[35m (0.1ms)[0m  select sqlite_version(*)
-  [1m[36m (11.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
-Migrating to CreateMeis (20151009214406)
-  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.6ms)[0m  CREATE TABLE "meis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "cpf" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
-  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151009214406"]]
-  [1m[35m (19.9ms)[0m  commit transaction
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
->>>>>>> 263187ac5e2c014efb531c7c0e0e65e8500033ec
