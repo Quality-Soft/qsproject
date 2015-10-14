@@ -1,0 +1,49 @@
+<%= form_for(@mei) do |f| %>
+  <% if @mei.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mei.errors.count, "error") %> prohibited this mei from being saved:</h2>
+
+      <ul>
+      <% @mei.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cnpj %><br>
+    <%= f.text_field :cnpj %>
+  </div>
+  <div class="field">
+    <%= f.label :razao_social %><br>
+    <%= f.text_field :razao_social %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br>
+    <%= f.text_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :rg %><br>
+    <%= f.text_field :rg %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br>
+    <%= f.text_field :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao_atividade %><br>
+    <%= f.text_field :descricao_atividade %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
