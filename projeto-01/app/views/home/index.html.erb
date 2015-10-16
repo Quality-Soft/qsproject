@@ -1,8 +1,4 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
 
-  
-  <section>
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
@@ -13,22 +9,24 @@
               <h1 style="text-shadow: 2px 2px 2px black;">Ache os MEI's da cidade do Recife</h1>
               <p style="text-shadow: 2px 2px 2px black;"class="lead">Pesquise por seus serviços e produtos, selecione o mais recomendado e ainda ajude no crescimento econômico da sua cidade!</p>
               <div>
-                <br>
                 <!--Aqui a gente vai fazer uma listagem dos bairros a partir do modelo.db com um .each, por exemplo... -->
-                <select name="Localidade" id="Localidade" placeholder="Local">
+                </br>
+                <select name="Localidade" class="Localidade">
                   <option value="">Local</option>
                   <option value="1">Alto do Mandú</option>
                   <option value="2">Marco zero</option>
                   <option value="3">Derby</option>
                   <option value="4">Encruzilhada</option>
                 </select>
+                </br>
                 <select name="Produto_servico" id="Produto_servico">
                   <option value="">Produto, Serviço ou MEI</option>
                   <option value="1">Produto</option>
                   <option value="2">Serviço</option>
                   <option value="3">MEI</option>
                 </select>
-                <br>
+                </br>
+                
                 <input maxlength="200" style="width: 430px;" type="text" name="Eletricista, padeiro, Mecânico.." placeholder="Eletricista, padeiro, Mecânico.." ></input>
               </div>
               <a class="btn btn-large btn-primary" href="#">Pesquisar</a>
@@ -36,11 +34,8 @@
           </div>
         </div>
     </div>
-  </section>
+  </div>
 
-
-
-  <article>
     <div class="container marketing">
     <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -65,4 +60,3 @@
       </div><!-- /.row -->
     </div><!-- /.container -->
     <!-- START THE FEATURETTES -->
-  </article>    
