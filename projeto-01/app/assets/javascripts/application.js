@@ -16,9 +16,4 @@
 //= require turbolinks
 //= require_tree .
 
-!function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
+      
