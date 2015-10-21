@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014231524) do
+ActiveRecord::Schema.define(version: 20151021230421) do
+
+  create_table "acts", force: :cascade do |t|
+    t.integer  "mei_id"
+    t.integer  "ocupation_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "acts", ["mei_id"], name: "index_acts_on_mei_id"
+  add_index "acts", ["ocupation_id"], name: "index_acts_on_ocupation_id"
 
   create_table "business_addresses", force: :cascade do |t|
     t.string   "rua"
@@ -23,6 +33,15 @@ ActiveRecord::Schema.define(version: 20151014231524) do
   end
 
   add_index "business_addresses", ["mei_id"], name: "index_business_addresses_on_mei_id"
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "description"
+    t.integer  "mei_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "comments", ["mei_id"], name: "index_comments_on_mei_id"
 
   create_table "home_addresses", force: :cascade do |t|
     t.string   "rua"
@@ -46,6 +65,12 @@ ActiveRecord::Schema.define(version: 20151014231524) do
     t.string   "email"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+  end
+
+  create_table "occupations", force: :cascade do |t|
+    t.string   "area"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "phone_numbers", force: :cascade do |t|
