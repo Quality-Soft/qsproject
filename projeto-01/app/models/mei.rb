@@ -6,4 +6,7 @@ class Mei < ActiveRecord::Base
     
     has_many :acts 
     has_many :occupations, :through => :acts
+    
+    has_many :works 
+    has_many :jobs, :through => :works
 end
