@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+  <%= form_tag(meis_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+  <%= submit_tag "Pesquise", class: "btn btn-success"%>
+  <% end %>
 <h1>Listing Meis</h1>
 
 <table>
@@ -38,4 +42,5 @@
 
 <br>
 
+<%= link_to 'Lista de Trabalhos', meis_path %>
 <%= link_to 'New Mei', new_mei_path %>
