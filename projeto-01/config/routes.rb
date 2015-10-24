@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   
+  resources :evaluations
+  resources :phone_numbers
+  resources :home_addresses
+  resources :business_addresses
+  resources :testes
   resources :comments
   resources :meis
   

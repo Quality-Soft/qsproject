@@ -1,0 +1,17 @@
+<%= form_for(@business_address) do |f| %>
+  <% if @business_address.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@business_address.errors.count, "error") %> prohibited this business_address from being saved:</h2>
+
+      <ul>
+      <% @business_address.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
