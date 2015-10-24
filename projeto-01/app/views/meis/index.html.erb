@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Meis</h1>
+
+<% if @meis.present? %>
+  
+  
+  <h1>Listing Meis</h1>
 
 <table>
   <thead>
@@ -16,6 +20,8 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+
+
 
   <tbody>
     <% @meis.each do |mei| %>
@@ -35,6 +41,17 @@
     <% end %>
   </tbody>
 </table>
+  
+  
+  
+<% else %>
+  <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
+<% end %>
+
+
+
+
+
 
 <br>
 

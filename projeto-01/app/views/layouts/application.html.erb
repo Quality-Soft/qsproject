@@ -37,7 +37,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <!-- os links devem ficar assim, com a tag 'links_to' -->
+            <li><a><%= link_to 'Home', 'home'%></a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
@@ -61,42 +62,54 @@
   ================================================== -->
   <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
   
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://circuitobrasileirodedegustacao.com/fotos/evento-99-1.jpg" alt="">
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="text-shadow: 2px 2px 2px black;">Ache os MEI's da cidade do Recife</h1>
-              <p style="text-shadow: 2px 2px 2px black;"class="lead">Pesquise por seus serviços e produtos, selecione o mais recomendado e ainda ajude no crescimento econômico da sua cidade!</p>
-              <div>
-                <!--Aqui a gente vai fazer uma listagem dos bairros a partir do modelo.db com um .each, por exemplo...-->
-                </br>
-                <select name="Localidade" class="Localidade">
-                  <option value="">Local</option>
-                  <option value="1">Alto do Mandú</option>
-                  <option value="2">Marco zero</option>
-                  <option value="3">Derby</option>
-                  <option value="4">Encruzilhada</option>
-                </select>
-                </br>
-                <select name="Produto_servico" id="Produto_servico">
-                  <option value="">Produto, Serviço ou MEI</option>
-                  <option value="1">Produto</option>
-                  <option value="2">Serviço</option>
-                  <option value="3">MEI</option>
-                </select>
-                </br>
-                
-                <input maxlength="200" style="width: 430px;" type="text" name="Eletricista, padeiro, Mecânico.." placeholder="Eletricista, padeiro, Mecânico.." ></input>
+  
+              <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="http://circuitobrasileirodedegustacao.com/fotos/evento-99-1.jpg" alt="">
+          
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <h1 style="text-shadow: 2px 2px 2px black;">Ache os MEI's da cidade do Recife</h1>
+                        <p style="text-shadow: 2px 2px 2px black;"class="lead">Pesquise por seus serviços e produtos, selecione o mais recomendado e ainda ajude no crescimento econômico da sua cidade!</p>
+                          <!-- 
+                          <div> <!-- Aqui a gente vai fazer uma listagem dos bairros a partir do modelo.db com um .each, por exemplo... 
+                          </br>
+                          <select name="Localidade" class="Localidade">
+                            <option value="">Local</option>
+                            <option value="1">Alto do Mandú</option>
+                            <option value="2">Marco zero</option>
+                            <option value="3">Derby</option>
+                            <option value="4">Encruzilhada</option>
+                          </select>
+                          </br>
+                          <select name="Produto_servico" id="Produto_servico">
+                            <option value="">Produto, Serviço ou MEI</option>
+                            <option value="1">Produto</option>
+                            <option value="2">Serviço</option>
+                            <option value="3">MEI</option>
+                          </select>
+                          </br>
+                          
+                          <input maxlength="200" style="width: 430px;" type="text" name="Eletricista, padeiro, Mecânico.." placeholder="Eletricista, padeiro, Mecânico.." ></input>
+                        </div>
+                        <a class="btn btn-large btn-primary" href="#">Pesquisar</a>
+                      -->
+                      <!-- parte do formulário -->
+                      
+                      <div class "container">
+                        <%= form_tag(meis_path, :method => 'get', id:"search-form") do %>
+                        <%= text_field_tag :search, params[:search] %>
+                        <%= submit_tag "Search" %>
+                        <% end %>
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <a class="btn btn-large btn-primary" href="#">Pesquisar</a>
-            </div>
-          </div>
-        </div>
-    </div>
+
   </div>
+  
+  
 <%= yield %>
 
 
