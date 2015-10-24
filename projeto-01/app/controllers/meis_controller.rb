@@ -4,7 +4,11 @@ class MeisController < ApplicationController
   # GET /meis
   # GET /meis.json
   def index
+    if params[:search] #se o parametro dfe pesquisa estiver sendo usado
+    @meis = Mei.search(params[:search])
+     else #senão
     @meis = Mei.all
+    end
   end
 
   # GET /meis/1
