@@ -11,6 +11,25 @@
     </div>
   <% end %>
 
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  
+  <div class="col-md-8">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= f.label :cnpj %></h3>
+      </div>
+      <div class="panel-body">
+        <%= f.text_field :cnpj %>
+      </div>
+    </div>
+  </div>
+    
+  <div class="col-md-2">
+  </div>
+</div>
+
   <div class="field">
     <%= f.label :cnpj %><br>
     <%= f.text_field :cnpj %>

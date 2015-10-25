@@ -1,44 +1,145 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Cnpj:</strong>
-  <%= @mei.cnpj %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  
+  <div class="col-md-8">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= @mei.nome %></h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          <strong>Cnpj:</strong>
+          <%= @mei.cnpj %>
+        </p>
 
-<p>
-  <strong>Razao social:</strong>
-  <%= @mei.razao_social %>
-</p>
+        <p>
+          <strong>Razao social:</strong>
+          <%= @mei.razao_social %>
+        </p>
 
-<p>
-  <strong>Cpf:</strong>
-  <%= @mei.cpf %>
-</p>
+        <p>
+          <strong>Cpf:</strong>
+          <%= @mei.cpf %>
+        </p>
 
-<p>
-  <strong>Rg:</strong>
-  <%= @mei.rg %>
-</p>
+        <p>
+          <strong>Rg:</strong>
+          <%= @mei.rg %>
+        </p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @mei.nome %>
-</p>
+        <p>
+          <strong>Nome:</strong>
+          <%= @mei.nome %>
+        </p>
 
-<p>
-  <strong>Sexo:</strong>
-  <%= @mei.sexo %>
-</p>
+        <p>
+          <strong>Sexo:</strong>
+          <%= @mei.sexo %>
+        </p>
 
-<p>
-  <strong>Descricao atividade:</strong>
-  <%= @mei.descricao_atividade %>
-</p>
+        <p>
+          <strong>Descricao atividade:</strong>
+          <%= @mei.descricao_atividade %>
+        </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @mei.email %>
-</p>
+        <p>
+          <strong>Email:</strong>
+          <%= @mei.email %>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-2">
+    <%= link_to 'Edit', edit_mei_path(@mei) %> |
+    <%= link_to 'Back', meis_path %>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_mei_path(@mei) %> |
-<%= link_to 'Back', meis_path %>
+<hr>
+
+<!-- Comentarios -->
+
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  
+  <div class="col-md-8">
+    <h3>Comentários:</h3>
+    <% @comentarios.each do |comentario| %>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= comentario.titulo %></h3>
+        </div>
+        <div class="panel-body">
+          <%= comentario.descricao %>
+          <br>
+          <br>
+          <i>por <%= comentario.nome %></i>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="col-md-2">
+  </div>
+</div>
+
+<!-- Postar Comentarios -->
+<hr>
+
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  
+  <div class="col-md-8">
+    
+    <%= form_for(@comentario) do |f| %>
+    <% if @comentario.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@comentario.errors.count, "error") %> prohibited this comentario from being saved:</h2>
+
+        <ul>
+        <% @comentario.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <h3>Comente aqui:</h3>
+    <div class="field">
+      <div class="form-group">
+      <%= f.label :nome %><br>
+      <%= f.text_field :nome %>
+      </div>
+    </div>
+    <div class="field">
+      <div class="form-group">
+      <%= f.label :titulo %><br>
+      <%= f.text_field :titulo %>
+      </div>
+    </div>
+    <div class="field">
+      <div class="form-group">
+      <%= f.label :descricao %><br>
+      <%= f.text_area :descricao %>
+      </div>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+    <% end %>
+  </div>
+  
+  <div class="col-md-2">
+  </div>
+</div>
+
+<hr>
+
+
+

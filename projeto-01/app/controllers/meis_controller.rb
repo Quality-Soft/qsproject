@@ -15,6 +15,8 @@ class MeisController < ApplicationController
   # GET /meis/1
   # GET /meis/1.json
   def show
+    @comentarios = Comentario.all
+    @comentario = Comentario.new
   end
 
   # GET /meis/new
