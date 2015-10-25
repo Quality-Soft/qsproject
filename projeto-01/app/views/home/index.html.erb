@@ -1,56 +1,28 @@
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Encontre os Meis de forma rápida e fácil</h1>
-        <p>Ache os serviços ou produtos que você precisa e que estão sendo oferencidos pelos MEIs na cidade do recife</p>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form">
-            <div class="col-md-12">
-              <div class="form-group">
-                <%= form_tag(meis_path, :method => "get", id: "search-form") do %>
-                <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
-                <%= submit_tag "Pesquise", class: "btn btn-success"%>
-                <% end %>
-              </div>
-              <!--<div class="form-group">
-                <select class="form-control">
-                  <option value="area">Área de atuação</option>
-                  <option value="produto">Produto</option>
-                  <option value="servico">Serviço</option>
-                  <option value="profissao">Profissão</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select class="form-control">
-                  <option value=" ">Localização</option>
-                  <option value="produto">Alto do mandú</option>
-                  <option value="servico">Encruzilhada</option>
-                  <option value="profissao">Marco zero</option>
-                  <option value="area">Derby</option>
-                </select>
-              </div>-->
-            <div class="form-group">
-                
-            </div>
-          </div>
-          
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-    <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-6" align="center">
-          <h2>Você já é um MEI ?</h2>
-          <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta: </p>
-          <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
-        </div>
-        <div class="col-md-6" align="center">
-          <h2>Ainda não é MEI?</h2>
-          <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei</p>
-          <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
-       </div>
-      </div>
 
-      <hr>
-      
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="list-group">    
+          <ul class="nav nav-sidebar">
+            <li><a href="#Electrician" class="list-group-item">Eletricista</a></li>            
+            <li><a href="#Joiner" class="list-group-item">Marceneiro</a></li>
+            <li><a href="#Mason" class="list-group-item">Pedreiro</a></li>
+            <li><a href="#Plumber" class="list-group-item">Encanador</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="#Hair" class="list-group-item">Cabelereiro</a></li>
+            <li><a href="#Painter" class="list-group-item">Pintor</a></li>
+            <li><a href="#Tailor" class="list-group-item">Alfaiate</a></li>
+            <li><a href="#Programmer" class="list-group-item">Programador</a></li>
+            <li><a href="#Door" class="list-group-item">Porteiro</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="#Engineer" class="list-group-item">Engenheiro</a></li>
+            <li><a href="#Doctor" class="list-group-item">Médico</a></li>
+            <li><a href="#Lawyer" class="list-group-item">Advogado</a></li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
       

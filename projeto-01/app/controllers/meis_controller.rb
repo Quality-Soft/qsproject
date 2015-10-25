@@ -4,11 +4,10 @@ class MeisController < ApplicationController
   # GET /meis
   # GET /meis.json
   def index
-    @meis = Mei.all
     if params[:search]
-        @meis = Mei.where("nome like '%#{params[:search]}%'")
+      @meis = Mei.where("nome like '%#{params[:search]}%'")
     else
-        @meis = Mei.all
+      @meis = Mei.all 
     end
   end
 
