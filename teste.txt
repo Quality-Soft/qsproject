@@ -1,7 +1,0 @@
-Sim, esse � um arquivo teste criado no bash em casa.
-
-Micael teste
-
-
-TESTE NA NOVA ORGANIZACAO E DIRETORIO
-TESTE
