@@ -58,7 +58,7 @@
             </p>
             
             <p>
-              <%= link_to 'Edite', edit_mei_path(@mei), class:'btn btn-sm btn-info' %>
+              <%= link_to 'Editar', edit_mei_path(@mei), class:'btn btn-sm btn-info' %>
             </p>
           </div>
         </div>
@@ -87,6 +87,7 @@
   
   <div class="col-md-8">
     <h3>Comentários:</h3>
+    
     <% @comentarios.each do |comentario| %>
       <div class="panel panel-default">
         <div class="panel-heading">
