@@ -1,7 +1,54 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Meis</h1>
+<div class="jumbotron">
+  <div class="container">
+      <h1>Encontre os Meis de forma rápida e fácil</h1>
+      <p>Ache os serviços ou produtos que você precisa e que estão sendo oferencidos pelos MEIs na cidade do recife</p>
+      <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form">
+            <div class="row" align="center">
+              <div class="col-md-12">
+              <div class="form-group">
+                <%= form_tag(meis_path, :method => "get", id: "search-form") do %>
+                <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+                <%= submit_tag "Pesquise", class: "btn btn-success"%>
+                <% end %>
+              </div>
+          </div>
+            </div>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+</div>
 
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  
+  <div class="col-md-8">
+    <% @meis.each do |mei| %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= mei.nome %></h3>
+           </div>
+           <div class="panel-body">
+             <p><strong>Descricao da atividade:</strong></p>
+             <%= mei.descricao_atividade %>
+            <br>
+            <div>
+              <br>
+            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-info' %>
+            </div>
+          </div>
+        </div>
+    <% end %>  
+    </div>
+    
+  <div class="col-md-2">
+  </div>
+</div>
+
+<!--
 <table>
   <thead>
     <tr>
@@ -18,24 +65,40 @@
   </thead>
 
   <tbody>
-    <% @meis.each do |mei| %>
+    < % @meis.each do |mei| %>
       <tr>
-        <td><%= mei.cnpj %></td>
-        <td><%= mei.razao_social %></td>
-        <td><%= mei.cpf %></td>
-        <td><%= mei.rg %></td>
-        <td><%= mei.nome %></td>
-        <td><%= mei.sexo %></td>
-        <td><%= mei.descricao_atividade %></td>
-        <td><%= mei.email %></td>
-        <td><%= link_to 'Show', mei %></td>
-        <td><%= link_to 'Edit', edit_mei_path(mei) %></td>
-        <td><%= link_to 'Destroy', mei, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>< %= mei.cnpj %></td>
+        <td>< %= mei.razao_social %></td>
+        <td>< %= mei.cpf %></td>
+        <td>< %= mei.rg %></td>
+        <td>< %= mei.nome %></td>
+        <td>< %= mei.sexo %></td>
+        <td>< %= mei.descricao_atividade %></td>
+        <td>< %= mei.email %></td>
+        <td>< %= link_to 'Show', mei %></td>
+        <td>< %= link_to 'Edit', edit_mei_path(mei) %></td>
+        <td>< %= link_to 'Destroy', mei, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+    < % end %>
   </tbody>
 </table>
+-->
 
 <br>
 
-<%= link_to 'New Mei', new_mei_path %>
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-md-6" align="center">
+    <h2>Você já é um MEI ?</h2>
+    <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta: </p>
+    <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
+  </div>
+  
+  <div class="col-md-6" align="center">
+    <h2>Ainda não é MEI?</h2>
+    <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei</p>
+    <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
+  </div>
+</div>
+
+<hr>

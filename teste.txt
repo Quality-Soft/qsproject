@@ -1,7 +1,5 @@
-Sim, esse � um arquivo teste criado no bash em casa.
 
-Micael teste
+SALVAR PARA POSSIVEL  BAKCUP
 
 
-TESTE NA NOVA ORGANIZACAO E DIRETORIO
-TESTE
+TESTANDO PELA 2 VEZ

@@ -4,12 +4,19 @@ class MeisController < ApplicationController
   # GET /meis
   # GET /meis.json
   def index
-    @meis = Mei.all
+    if params[:search]
+      @meis = Mei.where("nome like '%#{params[:search]}%'")
+      @meis = Mei.where("descricao_atividade like '%#{params[:search]}%'")
+    else
+      @meis = Mei.all 
+    end
   end
 
   # GET /meis/1
   # GET /meis/1.json
   def show
+    @comentarios = Comentario.all
+    @comentario = Comentario.new
   end
 
   # GET /meis/new

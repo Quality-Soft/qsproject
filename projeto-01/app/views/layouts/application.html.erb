@@ -26,79 +26,22 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#raking">Raking de serviços</a></li>
+            <li><a href="#raking">Ranking de serviços</a></li>
             <li><a href="#saladoempreedor">Sala do empreendedor</a></li>
             <li><a href="#faleconosco">Fale conosco</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Encontre os Meis de forma rápida e fácil</h1>
-        <p>Ache os serviços ou produtos que você precisa e que estão sendo oferencidos pelos MEIs na cidade do recife</p>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form">
-            <div class="col-md-12">
-              <div class="form-group">
-                <input type="pesquisa" placeholder="Pesquise.." class="form-control">
-              </div>
-              <div class="form-group">
-                <select class="form-control">
-                  <option value="area">Área de atuação</option>
-                  <option value="produto">Produto</option>
-                  <option value="servico">Serviço</option>
-                  <option value="profissao">Profissão</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select class="form-control">
-                  <option value=" ">Localização</option>
-                  <option value="produto">Alto do mandú</option>
-                  <option value="servico">Encruzilhada</option>
-                  <option value="profissao">Marco zero</option>
-                  <option value="area">Derby</option>
-                </select>
-              </div>
-            <div class="form-group">
-              <button type="button" class="btn btn-success">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-          
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-    <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-6" align="center">
-          <h2>Você já é um MEI ?</h2>
-          <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta: </p>
-          <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
-        </div>
-        <div class="col-md-6" align="center">
-          <h2>Ainda não é formalizado?</h2>
-          <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei</p>
-          <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
-       </div>
-      </div>
-
-      <hr>
-      
-      
-
+    
+    <div><%= yield %></div>
+    
       <footer>
         <div align="center">
           <p>&middot; <a href="#">Home</a> &middot; <a href="#">Quem somos nós</a> &middot; <a href="#">Sobre os Meis</a> &middot; <a href="#">Ranking dos serviços</a> &middot; <a href="#">Localização dos Meis</a> &middot; <a href="#">Sala do empreendedor</a> &middot; <a href="#">Mapa do site</a> &middot; <a href="#">Fale conosco</a> &middot; <a href="#">Parceiros</a></p>
         </div>
         </footer>
     </div> <!-- /container -->
-
-    
-    
 
 
     <!-- Bootstrap core JavaScript

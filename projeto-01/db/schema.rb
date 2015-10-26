@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014231524) do
+ActiveRecord::Schema.define(version: 20151025202716) do
 
   create_table "business_addresses", force: :cascade do |t|
     t.string   "rua"
@@ -23,6 +23,31 @@ ActiveRecord::Schema.define(version: 20151014231524) do
   end
 
   add_index "business_addresses", ["mei_id"], name: "index_business_addresses_on_mei_id"
+
+  create_table "comentarios", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "titulo"
+    t.text     "descricao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "coments", force: :cascade do |t|
+    t.string   "titulo"
+    t.string   "string"
+    t.string   "descricao"
+    t.string   "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "titulo"
+    t.text     "descricao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "nome"
+  end
 
   create_table "home_addresses", force: :cascade do |t|
     t.string   "rua"
