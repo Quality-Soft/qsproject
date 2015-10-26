@@ -32,23 +32,6 @@ ActiveRecord::Schema.define(version: 20151025202716) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "coments", force: :cascade do |t|
-    t.string   "titulo"
-    t.string   "string"
-    t.string   "descricao"
-    t.string   "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.string   "titulo"
-    t.text     "descricao"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "nome"
-  end
-
   create_table "home_addresses", force: :cascade do |t|
     t.string   "rua"
     t.string   "bairro"
