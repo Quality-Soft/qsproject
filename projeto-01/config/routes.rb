@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :home
   resources :meis
   resources :layouts
-  root 'meis#index'
+  root 'home#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
