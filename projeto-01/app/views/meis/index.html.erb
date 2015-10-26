@@ -24,24 +24,30 @@
 <div class="row">
   <div class="col-md-2">
   </div>
+  
   <div class="col-md-8">
     <% @meis.each do |mei| %>
-        <div class="panel panel-success">
+        <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><%= mei.nome %></h3>
            </div>
            <div class="panel-body">
              <p><strong>Descricao da atividade:</strong></p>
              <%= mei.descricao_atividade %>
-            <br> 
-            <%= link_to 'Show', mei %>
+            <br>
+            <div>
+              <br>
+            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-info' %>
+            </div>
           </div>
         </div>
     <% end %>  
     </div>
+    
   <div class="col-md-2">
   </div>
 </div>
+
 <!--
 <table>
   <thead>
@@ -77,20 +83,22 @@
   </tbody>
 </table>
 -->
+
 <br>
 
 <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-6" align="center">
-          <h2>Você já é um MEI ?</h2>
-          <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta: </p>
-          <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
-        </div>
-        <div class="col-md-6" align="center">
-          <h2>Ainda não é MEI?</h2>
-          <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei</p>
-          <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
-       </div>
-      </div>
+<div class="row">
+  <div class="col-md-6" align="center">
+    <h2>Você já é um MEI ?</h2>
+    <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta: </p>
+    <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
+  </div>
+  
+  <div class="col-md-6" align="center">
+    <h2>Ainda não é MEI?</h2>
+    <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei</p>
+    <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
+  </div>
+</div>
 
-      <hr>
+<hr>
