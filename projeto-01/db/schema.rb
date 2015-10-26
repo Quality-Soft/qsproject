@@ -13,6 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20151025202716) do
 
+  create_table "acts", force: :cascade do |t|
+    t.integer  "mei_id"
+    t.integer  "ocupation_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "acts", ["mei_id"], name: "index_acts_on_mei_id"
+  add_index "acts", ["ocupation_id"], name: "index_acts_on_ocupation_id"
+
   create_table "business_addresses", force: :cascade do |t|
     t.string   "rua"
     t.string   "bairro"
@@ -32,6 +42,15 @@ ActiveRecord::Schema.define(version: 20151025202716) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "evaluations", force: :cascade do |t|
+    t.integer  "mei_id"
+    t.integer  "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "evaluations", ["mei_id"], name: "index_evaluations_on_mei_id"
+
   create_table "home_addresses", force: :cascade do |t|
     t.string   "rua"
     t.string   "bairro"
@@ -42,6 +61,12 @@ ActiveRecord::Schema.define(version: 20151025202716) do
   end
 
   add_index "home_addresses", ["mei_id"], name: "index_home_addresses_on_mei_id"
+
+  create_table "jobs", force: :cascade do |t|
+    t.string   "nome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "meis", force: :cascade do |t|
     t.string   "cnpj"
@@ -56,6 +81,12 @@ ActiveRecord::Schema.define(version: 20151025202716) do
     t.datetime "updated_at",          null: false
   end
 
+  create_table "occupations", force: :cascade do |t|
+    t.string   "area"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "phone_numbers", force: :cascade do |t|
     t.string   "number"
     t.integer  "mei_id"
@@ -64,5 +95,15 @@ ActiveRecord::Schema.define(version: 20151025202716) do
   end
 
   add_index "phone_numbers", ["mei_id"], name: "index_phone_numbers_on_mei_id"
+
+  create_table "works", force: :cascade do |t|
+    t.integer  "mei_id"
+    t.integer  "job_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "works", ["job_id"], name: "index_works_on_job_id"
+  add_index "works", ["mei_id"], name: "index_works_on_mei_id"
 
 end
