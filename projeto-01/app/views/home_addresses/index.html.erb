@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Home Addresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @home_addresses.each do |home_address| %>
+      <tr>
+        <td><%= link_to 'Show', home_address %></td>
+        <td><%= link_to 'Edit', edit_home_address_path(home_address) %></td>
+        <td><%= link_to 'Destroy', home_address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Home address', new_home_address_path %>
