@@ -1,5 +1,6 @@
 class ComentariosController < ApplicationController
   before_action :set_comentario, only: [:show, :edit, :update, :destroy]
+  before_action :set_mei, only: [:show, :edit, :update, :destroy]
 
   # GET /comentarios
   # GET /comentarios.json
@@ -25,7 +26,6 @@ class ComentariosController < ApplicationController
   # POST /comentarios.json
   def create
     @comentario = Comentario.new(comentario_params)
-
     respond_to do |format|
       if @comentario.save
         format.html { redirect_to @comentario, notice: 'Comentario was successfully created.' }

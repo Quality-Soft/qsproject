@@ -1,3 +1,23 @@
+<div class="jumbotron">
+  <div class="container">
+      <h1>Encontre os Meis de forma rápida e fácil</h1>
+      <p>Ache os serviços ou produtos que você precisa e que estão sendo oferencidos pelos MEIs na cidade do recife</p>
+      <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form">
+            <div class="row" align="center">
+              <div class="col-md-12">
+              <div class="form-group">
+                <%= form_tag(meis_path, :method => "get", id: "search-form") do %>
+                <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+                <%= submit_tag "Pesquise", class: "btn btn-success"%>
+                <% end %>
+              </div>
+          </div>
+            </div>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+</div>
 
     <div class="container-fluid">
       <div class="row">
