@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   resources :comentarios
-  resources :comments
+  #resources :comments
   resources :home
   resources :meis
   resources :layouts
