@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   
   resources :comentarios
-  resources :comments
+  #resources :comments
   resources :home
   resources :meis
   resources :layouts
-  root 'meis#index'
+  root 'home#index'
+  get 'home/index' => 'home#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
