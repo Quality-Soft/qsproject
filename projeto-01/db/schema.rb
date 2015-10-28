@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151025202716) do
+ActiveRecord::Schema.define(version: 20151028224951) do
 
   create_table "acts", force: :cascade do |t|
     t.integer  "mei_id"
@@ -34,26 +34,17 @@ ActiveRecord::Schema.define(version: 20151025202716) do
 
   add_index "business_addresses", ["mei_id"], name: "index_business_addresses_on_mei_id"
 
-  create_table "comentarios", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.string   "nome"
     t.string   "titulo"
     t.text     "descricao"
+    t.integer  "meis_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
-  create_table "comments", force: :cascade do |t|
-    t.text     "description"
-    t.integer  "mei_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
+  add_index "comments", ["meis_id"], name: "index_comments_on_meis_id"
 
-  add_index "comments", ["mei_id"], name: "index_comments_on_mei_id"
-
->>>>>>> correcao-do-bug-da-home
   create_table "evaluations", force: :cascade do |t|
     t.integer  "mei_id"
     t.integer  "rating"
@@ -108,15 +99,6 @@ ActiveRecord::Schema.define(version: 20151025202716) do
 
   add_index "phone_numbers", ["mei_id"], name: "index_phone_numbers_on_mei_id"
 
-<<<<<<< HEAD
-=======
-  create_table "testes", force: :cascade do |t|
-    t.string   "nome"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
->>>>>>> correcao-do-bug-da-home
   create_table "works", force: :cascade do |t|
     t.integer  "mei_id"
     t.integer  "job_id"
