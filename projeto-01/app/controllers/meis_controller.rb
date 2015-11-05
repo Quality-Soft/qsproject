@@ -68,6 +68,11 @@ class MeisController < ApplicationController
     end
   end
 
+  def search_tmdb
+    Meis.find_in_tmdb(params[:search_terms])
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_mei

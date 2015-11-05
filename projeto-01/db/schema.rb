@@ -34,14 +34,6 @@ ActiveRecord::Schema.define(version: 20151028224951) do
 
   add_index "business_addresses", ["mei_id"], name: "index_business_addresses_on_mei_id"
 
-  create_table "comentarios", force: :cascade do |t|
-    t.string   "nome"
-    t.string   "titulo"
-    t.text     "descricao"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "comments", force: :cascade do |t|
     t.string   "nome"
     t.string   "titulo"
