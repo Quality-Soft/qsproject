@@ -69,7 +69,6 @@ class MeisController < ApplicationController
   end
 
   def search_tmdb
-    Meis.find_in_tmdb(params[:search_terms])
   end
 
 
