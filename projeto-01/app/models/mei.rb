@@ -10,7 +10,9 @@ class Mei < ActiveRecord::Base
     has_many :works 
     has_many :jobs, :through => :works
     
-    #def self.search(search)
-    #    where("descricao_atividade LIKE ?", "%#{search}%")
-    #end
+    def self.search(search)
+        where("nome LIKE ?", "%#{search}%")
+        where("descricao_atividade LIKE ?", "%#{search}%")
+        
+    end
 end
