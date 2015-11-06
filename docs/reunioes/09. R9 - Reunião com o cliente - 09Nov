@@ -9,6 +9,21 @@ Pauta:
 Exibir resultados da 1 iteração, o que conseguimos fazer e o que não conseguimos.
 
 
+Para elicitar requisitos:
+
+Para elaborar perguntas detalhadas é necessário solicitar que o usuário:
+
+Explique o relacionamento entre o que está em discussão e as demais partes do sistema;
+Descreva o ponto de vista de outros usuários em relação ao item que esteja sendo discutido;
+Descreva informalmente a narrativa do item em que o analista deseja obter informações;
+Perguntar ao usuário se o item em discussão depende para a sua existência de alguma outra coisa, 
+para assim poder juntar os requisitos comuns do sistema, formando assim um escopo conciso.
+Pode-se utilizar a confirmação, para tanto o analista deve dizer ao usuário o que acha que ouviu ele dizer.
+Neste caso, o analista deve utilizar as suas próprias palavras em lugar das do entrevistado e solicitar ao 
+entrevistado confirmação do que foi dito.
+
+
+
 
 
 
