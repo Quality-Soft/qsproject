@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'home/index' => 'home#index'
   
+  post '/meis/search_tmdb'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

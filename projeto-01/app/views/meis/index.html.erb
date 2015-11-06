@@ -1,7 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <!-- remoção do formulário de consulta  -->
-
+<div class="form-group">
+                <%= form_tag(meis_path, :method => "get", id: "search-form") do %>
+                <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+                <%= submit_tag "Pesquise", class: "btn btn-success"%>
+                <% end %>
+              </div>
+              
 <div class="row">
   <div class="col-md-2">
   </div>
