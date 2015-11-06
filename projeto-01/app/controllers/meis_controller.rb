@@ -4,10 +4,10 @@ class MeisController < ApplicationController
   # GET /meis
   # GET /meis.json
   def index
-    if params[:search] && params[:search] != ""
+    if params[:search]
       @meis = Mei.search(params[:search])
     else
-      @meis = nil
+      @meis = Mei.all 
     end
   end
 
