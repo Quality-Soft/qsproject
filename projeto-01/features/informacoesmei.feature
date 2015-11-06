@@ -9,6 +9,7 @@ Feature: PROCURAR MEI POR NOME OU DESCRIÇÃO DA ATIVIDADE
  
     Scenario: Deve retornar o resultado esperado pelo cliente e que estejam relacionados com os dados fornecidos.
         Given I am on the meis page
-        And I fill in "pesquise" with "desenvolvedor"
+        And I fill in "Pesquise" with "desenvolvedor"
         When I press "Pesquise"
-        Then then the page should display as a result "desenvolvedor"
+        #Then page should have notice message "Your message was successfully delivered."
+        Then the page should display as a result "desenvolvedor"

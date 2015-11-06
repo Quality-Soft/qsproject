@@ -4,6 +4,7 @@ Given /^I am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
+
 When /^I go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end
@@ -87,3 +88,11 @@ end
 Then /^page should have (.+) message "([^\"]*)"$/ do |type, text|
   page.has_css?("p.#{type}", :text => text, :visible => true)
 end
+
+Then /^the page should (.+) as a result "([^\"]*)"$/ do |type, text|
+  page.has_css?("p.#{type}", :text => text, :visible => true)
+end
+
+#And /^I fill in "([^\"]*)"  with "([^\"]*)" do |field, value|
+#  fill_in(field.gsub(' ', '_'), :with => value)
+#end
