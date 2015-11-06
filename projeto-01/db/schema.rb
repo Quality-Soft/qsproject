@@ -99,6 +99,12 @@ ActiveRecord::Schema.define(version: 20151028224951) do
 
   add_index "phone_numbers", ["mei_id"], name: "index_phone_numbers_on_mei_id"
 
+  create_table "testes", force: :cascade do |t|
+    t.string   "nome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "works", force: :cascade do |t|
     t.integer  "mei_id"
     t.integer  "job_id"
