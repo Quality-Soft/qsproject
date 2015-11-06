@@ -11,7 +11,7 @@ class Mei < ActiveRecord::Base
     has_many :jobs, :through => :works
     
     def self.search(search_params)
-        where("nome LIKE ?", "%#{search_params}%")
-        where("descricao_atividade LIKE ?", "%#{search_params}%")
+        where("nome LIKE ? OR descricao_atividade LIKE ?", "%#{search_params}%", "%#{search_params}%")
+        #where("descricao_atividade LIKE ?", "%#{search_params}%")
     end
 end
