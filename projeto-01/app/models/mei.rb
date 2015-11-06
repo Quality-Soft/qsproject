@@ -13,6 +13,5 @@ class Mei < ActiveRecord::Base
     def self.search(search)
         where("nome LIKE ?", "%#{search}%")
         where("descricao_atividade LIKE ?", "%#{search}%")
-        
     end
 end

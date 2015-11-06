@@ -28,3 +28,6 @@ Ayrton França   |  Desenvolvedor Front-End e administrativo
 
 
 Outras informações: A aplicação será desenvolvida em Ruby , no framework Rails. Para controle de versão e repositório será utilizado GitHub e para o gerenciamentos das atividades GitHub + Zenhub. Para visualizar o workspace configurado com o zenhub, basta baixar a extensão para o Chrome no link https://chrome.google.com/webstore/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd.
+
+
+Obrigado!
