@@ -14,8 +14,10 @@ class MeisController < ApplicationController
   # GET /meis/1
   # GET /meis/1.json
   def show
-    @comments = Comment.all
+    @comments = Comment.where(mei: mei)
+    @comments = Coment.where(mei_id: mei)
     @comment = Comment.new
+    
   end
 
   # GET /meis/new
