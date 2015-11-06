@@ -8,7 +8,7 @@ Feature: PROCURAR MEI POR NOME OU DESCRIÇÃO DA ATIVIDADE
     eu quero seleciona-lo por categoria.
  
     Scenario: Deve retornar o resultado esperado pelo cliente e que estejam relacionados com os dados fornecidos.
-        Given Eu estou na home meis
+        Given I am on the meis page
         And I fill in "pesquise" with "desenvolvedor"
         When I press "Pesquise"
         Then then the page should display as a result "desenvolvedor"
