@@ -7,16 +7,46 @@
             <div class="row" align="center">
               <div class="col-md-12">
               <div class="form-group">
-                <%= form_tag(meis_path, :method => "get", id: "search-form") do %>
-                <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
-                <%= submit_tag "Pesquise", class: "btn btn-success"%>
-                <% end %>
+                  <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
+                    <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+                    <%= submit_tag "Pesquise", class: "btn btn-success"%>
+                  <% end %>
               </div>
           </div>
             </div>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  
+  <div class="col-md-8">
+    <% if @meis != nil %>
+    <% @meis.each do |mei| %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= mei.nome %></h3>
+           </div>
+           <div class="panel-body">
+             <p><strong>Descricao da atividade:</strong></p>
+             <%= mei.descricao_atividade %>
+            <br>
+            <div>
+              <br>
+            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-info' %>
+            </div>
+          </div>
+        </div>
+    <% end %>
+    <% end %>
+    </div>
+    
+  <div class="col-md-2">
+  </div>
 </div>
 
 <!--

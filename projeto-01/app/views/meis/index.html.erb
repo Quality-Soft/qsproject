@@ -13,6 +13,7 @@
   </div>
   
   <div class="col-md-8">
+    <% if @meis != nil %>
     <% @meis.each do |mei| %>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -28,7 +29,8 @@
             </div>
           </div>
         </div>
-    <% end %>  
+    <% end %>
+    <% end %>
     </div>
     
   <div class="col-md-2">

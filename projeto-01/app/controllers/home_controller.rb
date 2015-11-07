@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-    #@mei.alguma_coisa = Mei.all 
+    if params[:search]
+      @meis = Mei.search(params[:search])
+    end
   end
 end
