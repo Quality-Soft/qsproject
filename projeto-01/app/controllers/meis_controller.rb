@@ -4,6 +4,9 @@ class MeisController < ApplicationController
   # GET /meis
   # GET /meis.json
   def index
+    #caso a página de meis seja acessada sem passar parâmetros, é necessário mostrar todos os existentes
+    #pode ser alterado lá na frente, quando for necessário filtrar por categorias, por exemplo
+    @meis = Mei.all
     if params[:search]
       @meis = Mei.search(params[:search])
     end
@@ -13,12 +16,17 @@ class MeisController < ApplicationController
   # GET /meis/1.json
   def show
     @comments = Comment.all
-    @comment = Comment.new
+    
+    
+    @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
   end
 
   # GET /meis/new
   def new
     @mei = Mei.new
+    @mei.phone_numbers.build
+    @mei.business_address.build
+    @mei.home_address.build
   end
 
   # GET /meis/1/edit
