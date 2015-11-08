@@ -24,7 +24,7 @@ class MeisController < ApplicationController
   # GET /meis/new
   def new
     @mei = Mei.new
-    @mei.phone_numbers.build
+    2.times { @mei.phone_numbers.build }
     @mei.business_address.build
     @mei.home_address.build
   end

@@ -27,12 +27,8 @@
   
   <div class="col-md-8">
     <!-- < % if @meis != nil %> -->
-    <% if @meis == [] %>
-      <div>
-        <p> Não encontramos nenhum mei para esta pesquisa... 
-      </div>
-    <% else %>
-    <% @meis.each do |mei| %>
+    <% if @meis.present? %>
+      <% @meis.each do |mei| %>
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><%= mei.nome %></h3>
@@ -47,9 +43,13 @@
             </div>
           </div>
         </div>
+      <% end %>
+    <% else %>
+        <div>
+          <p> Não encontramos nenhum mei para esta pesquisa... 
+        </div>
     <% end %>
-    <% end %>
-    </div>
+  </div>
     
   <div class="col-md-2">
   </div>
