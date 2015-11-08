@@ -2,7 +2,7 @@
   <div class="container" align="center">
       <img alt="mei" src="/assets/mei.jpg" />
       <h1 style="color: #018def">Encontre os MEIs de forma rápida e fácil</h1>
-      <p style="color: #018def">Ache os serviços ou produtos que você precisa e que estão sendo oferencidos pelos MEIs na cidade do Recife</p>
+      <p style="color: #018def">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na cidade do Recife</p>
       <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form">
             <div class="row" align="center">
@@ -26,7 +26,12 @@
   </div>
   
   <div class="col-md-8">
-    <% if @meis != nil %>
+    <!-- < % if @meis != nil %> -->
+    <% if @meis == [] %>
+      <div>
+        <p> Não encontramos nenhum mei para esta pesquisa... 
+      </div>
+    <% else %>
     <% @meis.each do |mei| %>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -50,6 +55,7 @@
   </div>
 </div>
 <!--
+
 
     <div class="container-fluid">
       <div class="row">
@@ -82,13 +88,13 @@
 <div class="row">
   <div class="col-md-6" align="center">
     <h2>Você já é um MEI ?</h2>
-    <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta: </p>
+    <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta! </p>
     <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
   </div>
   
   <div class="col-md-6" align="center">
     <h2>Ainda não é MEI?</h2>
-    <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei</p>
+    <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
     <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
   </div>
 </div>
