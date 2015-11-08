@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     if params[:search]
-      redirect_to meis_path
+      @meis = Mei.search(params[:search])
     end
   end
 end
