@@ -31,7 +31,7 @@
               <div class="row" align="center">
               <div class="col-md-12">
               <div class="form-group">
-                  <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
+                <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
                     <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
                     <%= submit_tag "Pesquise", class: "btn btn-success"%>
                   <% end %>
@@ -43,8 +43,6 @@
         </div>
         
     </div><!-- /.carousel -->
-
-
 
 <div class="row">
   <div class="col-md-2">
