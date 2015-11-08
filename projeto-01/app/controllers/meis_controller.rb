@@ -6,8 +6,6 @@ class MeisController < ApplicationController
   def index
     if params[:search]
       @meis = Mei.search(params[:search])
-    else
-      @meis = Mei.all 
     end
   end
 
@@ -48,7 +46,7 @@ class MeisController < ApplicationController
   def update
     respond_to do |format|
       if @mei.update(mei_params)
-        format.html { redirect_to @mei, notice: 'Mei was successfully updated.' }
+        format.html { redirect_to @mei, notice: 'Mei was successfully created.' }
         format.json { render :show, status: :ok, location: @mei }
       else
         format.html { render :edit }
