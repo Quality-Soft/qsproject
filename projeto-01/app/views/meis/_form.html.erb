@@ -18,43 +18,49 @@
     <% end %>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Modifique seus dados</h3>
+        <h3 class="panel-title">Seus dados</h3>
       </div>
       <div class="panel-body">
+          <!--div para agrupar os dados pessoais e da org. -->
+            <!--Acho que aqui deveria conter uma div para agrupar o nome e o seox... -->
+            <div class="field">
+              <%= f.label "Seu nome" %><br>
+              <%= f.text_field :nome %>
+            </div>
+            <div class="field">
+              <%= f.label :sexo %><br>
+              <%= f.select(:sexo, ["Masculino", "Feminino"]) %>
+              <!-- < % = f.text_field :sexo %> --
+            </div>
+            <!--Fim da div-->
+          <div class="field">
+            <%= f.label "Razão Social" %><br>
+            <%= f.text_field :razao_social %>
+          </div>
+          
+          <div class="field">
+            <%= f.label "Descrição da Atividade" %><br>
+            <%= f.text_area :descricao_atividade %>
+          </div>
+        
         <div class="field">
-          <%= f.label :cnpj %><br>
+          <%= f.label "CNPJ" %><br>
           <%= f.text_field :cnpj %>
         </div>
         <br>
-        <div class="field">
-          <%= f.label :razao_social %><br>
-          <%= f.text_field :razao_social %>
-        </div>
+        
         <br>
         <div class="field">
-          <%= f.label :cpf %><br>
+          <%= f.label "CPF" %><br>
           <%= f.text_field :cpf %>
         </div>
         <br>
         <div class="field">
-          <%= f.label :rg %><br>
+          <%= f.label "RG" %><br>
           <%= f.text_field :rg %>
         </div>
-        <br>
-        <div class="field">
-          <%= f.label :nome %><br>
-          <%= f.text_field :nome %>
-        </div>
-        <br>
-        <div class="field">
-          <%= f.label :sexo %><br>
-          <%= f.text_field :sexo %>
-        </div>
-        <br>
-        <div class="field">
-          <%= f.label :descricao_atividade %><br>
-          <%= f.text_field :descricao_atividade %>
-        </div>
+
+
         <br>
         <div class="field">
           <%= f.label :email %><br>
@@ -64,7 +70,7 @@
         <!--Nested form for phone_numbers-->
         <div class="field"><br>
           <%= f.fields_for :phone_numbers do |builder| %>
-          <%= builder.label "Contato" %><br>
+          <p><%= builder.label "Contato" %><br>
           <%= builder.text_field :number %>
           <% end %>
         </div>
