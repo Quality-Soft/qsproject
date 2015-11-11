@@ -60,6 +60,49 @@
           <%= f.label :email %><br>
           <%= f.text_field :email %>
         </div>
+        
+        <!--Nested form for phone_numbers-->
+        <div class="field"><br>
+          <%= f.fields_for :phone_numbers do |builder| %>
+          <%= builder.label "Contato" %><br>
+          <%= builder.text_field :number %>
+          <% end %>
+        </div>
+        
+        <!--Nested form for  business_address-->
+        <div class="field"><br>
+          <%= f.fields_for :business_address do |builder| %>
+          <p><b>Endereço Comercial</b> 
+          <p>
+          <%= builder.label "Rua" %><br>
+          <%= builder.text_field :rua %>
+          <p>
+          <%= builder.label "Bairro" %><br>
+          <%= builder.text_field :bairro %>
+          <p>
+          <%= builder.label "cidade" %><br>
+          <%= builder.text_field :cidade %>
+          <% end %>
+        </div>
+        
+        
+        <!--Nested form for home_address -->
+        <div class="field"><br>
+          <%= f.fields_for :home_address do |builder| %>
+          <p><b>Endereço Residencial</b> 
+          <p>
+          <%= builder.label "Rua" %><br>
+          <%= builder.text_field :rua %>
+          <p>
+          <%= builder.label "Bairro" %><br>
+          <%= builder.text_field :bairro %>
+          <p>
+          <%= builder.label "cidade" %><br>
+          <%= builder.text_field :cidade %>
+          <% end %>
+        </div>
+        
+      
         <br>
         <div class="actions">
           <%= f.submit 'Salvar', class:'btn btn- btn-info'%>
