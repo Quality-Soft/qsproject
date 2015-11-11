@@ -9,7 +9,7 @@ Características: mei-a-MEI é um aplicação web voltada para o MEI (Micro Empr
 
 
 
-Time e Funções:
+Staff and functions
 ----------------
 
 Micael Santos   |  Gerente de projeto, teste e dba
