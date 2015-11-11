@@ -27,7 +27,8 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to controller: 'meis', action: 'show', id: 1 }
+        #Id representativo. É preciso modificar posteriormente.
+        format.html { redirect_to controller: 'meis', action: 'show', id: 4 }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new }
