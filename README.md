@@ -1,4 +1,7 @@
-mei-a-MEI
+# mei-a-MEI
+
+Documentation
+-------------
 
 Projeto da disciplina de engenharia de Software
 
@@ -11,7 +14,8 @@ Características: mei-a-MEI é um aplicação web voltada para o MEI (Micro Empr
 - Visualizar informações
 
 
-Time e Funções: 
+Time e Funções:
+----------------
 
 Micael Santos   |  Gerente de projeto, teste e dba
 
