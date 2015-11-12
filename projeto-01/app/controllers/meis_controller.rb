@@ -15,17 +15,9 @@ class MeisController < ApplicationController
   # GET /meis/1
   # GET /meis/1.json
   def show
-<<<<<<< HEAD
-    @comments = Comment.where(mei: mei)
-    @comments = Coment.where(mei_id: mei)
-    @comment = Comment.new
-    
-=======
     @comments = Comment.all
-    
-    
     @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
->>>>>>> dde48d1d5ccbeda5b7db8d44e898df878729321d
+    
   end
 
   # GET /meis/new
