@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151028224951) do
+ActiveRecord::Schema.define(version: 20151111234034) do
 
   create_table "acts", force: :cascade do |t|
     t.integer  "mei_id"
-    t.integer  "ocupation_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.integer  "occupation_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   add_index "acts", ["mei_id"], name: "index_acts_on_mei_id"
-  add_index "acts", ["ocupation_id"], name: "index_acts_on_ocupation_id"
+  add_index "acts", ["occupation_id"], name: "index_acts_on_occupation_id"
 
   create_table "business_addresses", force: :cascade do |t|
     t.string   "rua"
@@ -98,6 +98,12 @@ ActiveRecord::Schema.define(version: 20151028224951) do
   end
 
   add_index "phone_numbers", ["mei_id"], name: "index_phone_numbers_on_mei_id"
+
+  create_table "testes", force: :cascade do |t|
+    t.string   "nome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "works", force: :cascade do |t|
     t.integer  "mei_id"
