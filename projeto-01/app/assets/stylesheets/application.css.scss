@@ -4666,8 +4666,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #3399ff;
-  border-color: #2a9bd1;
+  background-color: #104185;
+  border-color: #044FA1;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4686,7 +4686,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: #2a9bd1;
+  background-color: #044FA1;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -6321,9 +6321,11 @@ button.close {
 .carousel-inner > .item {
   position: relative;
   display: none;
+  /*
   -webkit-transition: .6s ease-in-out left;
        -o-transition: .6s ease-in-out left;
           transition: .6s ease-in-out left;
+          */
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -6334,7 +6336,6 @@ button.close {
     -webkit-transition: -webkit-transform .6s ease-in-out;
          -o-transition:      -o-transform .6s ease-in-out;
             transition:         transform .6s ease-in-out;
-
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-perspective: 1000px;

@@ -2,7 +2,7 @@
   <div class="col-md-12">
 <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -14,29 +14,31 @@
           <img class="first-slide" src="assets/recifeHome.jpg" alt="First slide" width= "100%">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1 style="color: #FEFFFF; background-color:rgba(251, 220, 81, 0.80); border-color: #F3E97A">Encontre os MEIs de forma rápida e fácil</h1>
+              <p style="color: #FEFFFF; background-color:rgba(251, 220, 81, 0.80); border-color: #F3E97A">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na cidade do Recife</p>
+      
+              <div class="form-group">
+                  <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
+                    <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+                    <%= submit_tag "Pesquise", class: "btn btn-success"%>
+                   <% end %>
+              </div>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="assets/recifeHome.jpg" alt="Second slide">
+          <img class="second-slide" src="assets/recifeHome.jpg" alt="Second slide" width= "100%">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="assets/recifeHome.jpg" alt="Third slide">
+          <img class="third-slide" src="assets/recifeHome.jpg" alt="Third slide" width= "100%">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              
             </div>
           </div>
         </div>
@@ -133,15 +135,18 @@
       
 <!-- Example row of columns -->
 <div class="row">
-  <div class="col-md-6" align="center">
+  <div class="col-md-4" align="center" style="background-color: #FDE01B">
     <h2>Você já é um MEI ?</h2>
+    </br>
     <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta! </p>
     <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
   </div>
-  
-  <div class="col-md-6" align="center">
+  <div class="col-md-4"></div>
+  <div class="col-md-4" align="center" style="background-color: #FDE01B">
     <h2>Ainda não é MEI?</h2>
+    </br>
     <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
     <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
   </div>
 </div>
+
