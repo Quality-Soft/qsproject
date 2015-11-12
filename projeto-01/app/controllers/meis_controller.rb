@@ -4,25 +4,36 @@ class MeisController < ApplicationController
   # GET /meis
   # GET /meis.json
   def index
+    #caso a página de meis seja acessada sem passar parâmetros, é necessário mostrar todos os existentes
+    #pode ser alterado lá na frente, quando for necessário filtrar por categorias, por exemplo
+    @meis = Mei.all
     if params[:search]
       @meis = Mei.search(params[:search])
-    else
-      @meis = Mei.all 
     end
   end
 
   # GET /meis/1
   # GET /meis/1.json
   def show
+<<<<<<< HEAD
     @comments = Comment.where(mei: mei)
     @comments = Coment.where(mei_id: mei)
     @comment = Comment.new
     
+=======
+    @comments = Comment.all
+    
+    
+    @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
+>>>>>>> dde48d1d5ccbeda5b7db8d44e898df878729321d
   end
 
   # GET /meis/new
   def new
     @mei = Mei.new
+    2.times { @mei.phone_numbers.build }
+    @mei.business_address.build
+    @mei.home_address.build
   end
 
   # GET /meis/1/edit
@@ -36,7 +47,7 @@ class MeisController < ApplicationController
 
     respond_to do |format|
       if @mei.save
-        format.html { redirect_to @mei, notice: 'Mei was successfully created.' }
+        format.html { redirect_to @mei }#, notice: 'Mei was successfully created.' }
         format.json { render :show, status: :created, location: @mei }
       else
         format.html { render :new }
@@ -50,7 +61,7 @@ class MeisController < ApplicationController
   def update
     respond_to do |format|
       if @mei.update(mei_params)
-        format.html { redirect_to @mei, notice: 'Mei was successfully updated.' }
+        format.html { redirect_to @mei}#, notice: 'Mei was successfully created.' }
         format.json { render :show, status: :ok, location: @mei }
       else
         format.html { render :edit }
