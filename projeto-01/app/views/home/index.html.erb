@@ -54,7 +54,8 @@
               <div class="col-md-12">
               <div class="form-group">
                   <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
-                    <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
+                    <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise"%>
+                    <%= select_tag( :category, options_for_select([['Serviço', 1], ['Produto', 2]]), class: "form-control") %>
                     <%= submit_tag "Pesquise", class: "btn btn-primary"%>
                    <% end %>
               </div>
@@ -88,10 +89,11 @@
           </div>
         </div>
       <% end %>
-    <% else %>
+    <% elsif @meis == [] %>
         <div>
-          <div class="alert alert-danger" role="alert">
-            <strong>Ops!</strong>  Não encontramos nenhum mei para esta pesquisa.
+          <div class="alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
           </div>
         </div>
     <% end %>
@@ -110,6 +112,8 @@
   </div>
   <div class="col-md-6" align="center" style="background-color: #104185">
     <h2 style="color: #FFFFFF;">Ainda não é MEI?</h2>
+    </br>
+    
     <p style="color: #FFFFFF;">Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
     <p><a class="btn btn-primary" href="#" role="button">Descobrir &raquo;</a></p>
   </div>
