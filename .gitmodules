@@ -1,0 +1,9 @@
+[submodule "projeto-01/vendor/plugins/webrat"]
+	path = projeto-01/vendor/plugins/webrat
+	url = git://github.com/brynary/webrat.git
+[submodule "projeto-01/vendor/plugins/rspec"]
+	path = projeto-01/vendor/plugins/rspec
+	url = git://github.com/dchelimsky/rspec.git
+[submodule "projeto-01/vendor/plugins/rspec-rails"]
+	path = projeto-01/vendor/plugins/rspec-rails
+	url = git://github.com/dchelimsky/rspec-rails.git

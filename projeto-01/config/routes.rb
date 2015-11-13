@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'home/index' => 'home#index'
   
   post '/meis/search_tmdb'
+  
+  devise_for :users, controllers: { home: "home" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
