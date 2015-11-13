@@ -1,8 +1,53 @@
+<div class="row">
+  <div class="col-md-12">
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= link_to image_tag("recifeHome.jpg", class:"first-slide", alt:"First slide", width: "100%"), "http://www2.recife.pe.gov.br/servico/sala-do-empreendedor-0"%>
+          <!--<img class="first-slide" src="assets/recifeHome.jpg" alt="First slide" width= "100%">-->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Sala do empreendedor</h1>
+              <p>Descubra como se tornar um MEI e ajudar a sua cidade a crescer junto com as pessoas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= link_to image_tag("recife.jpg", class:"second-slide", alt:"Second slide", width: "100%"), "http://www2.recife.pe.gov.br/"%>
+          <!--img class="second-slide" src="assets/recife.jpg" alt="Second slide" width= "100%">-->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Prefeitura do recife</h1>
+              <p>Veja as novidades que estão sendo ofertadas pela prefeitura do recife</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="assets/P-recife.jpg" alt="Third slide" width= "100%">
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+    </div>
+</div>
+
 <div class="jumbotron">
   <div class="container" align="center">
       <img alt="mei" src="/assets/mei.jpg" />
-      <h1 style="color: #018def">Encontre os MEIs de forma rápida e fácil</h1>
-      <p style="color: #018def">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na cidade do Recife</p>
+      <h1 style="color: #104185">Encontre os MEIs de forma rápida e fácil</h1>
+      <p style="color: #104185">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na cidade do Recife</p>
       <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form">
             <div class="row" align="center">
@@ -10,8 +55,8 @@
               <div class="form-group">
                   <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
                     <%= text_field_tag :search, params[:search], placeholder: "Pesquise"%>
-                    <%= submit_tag "Pesquise", class: "btn btn-success"%>
-                  <% end %>
+                    <%= submit_tag "Pesquise", class: "btn btn-primary"%>
+                   <% end %>
               </div>
           </div>
             </div>
@@ -19,7 +64,6 @@
         </div>
       </div>
 </div>
-
 
 <div class="row">
   <div class="col-md-2">
@@ -39,14 +83,16 @@
             <br>
             <div>
               <br>
-            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-info' %>
+            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary' %>
             </div>
           </div>
         </div>
       <% end %>
     <% else %>
         <div>
-          <p> Não encontramos nenhum mei para esta pesquisa... 
+          <div class="alert alert-danger" role="alert">
+            <strong>Ops!</strong>  Não encontramos nenhum mei para esta pesquisa.
+          </div>
         </div>
     <% end %>
   </div>
@@ -54,47 +100,18 @@
   <div class="col-md-2">
   </div>
 </div>
-<!--
-
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-        <div class="list-group">    
-          <ul class="nav nav-sidebar">
-            <li><a href="#Electrician" class="list-group-item">Eletricista</a></li>            
-            <li><a href="#Joiner" class="list-group-item">Marceneiro</a></li>
-            <li><a href="#Mason" class="list-group-item">Pedreiro</a></li>
-            <li><a href="#Plumber" class="list-group-item">Encanador</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="#Hair" class="list-group-item">Cabelereiro</a></li>
-            <li><a href="#Painter" class="list-group-item">Pintor</a></li>
-            <li><a href="#Tailor" class="list-group-item">Alfaiate</a></li>
-            <li><a href="#Programmer" class="list-group-item">Programador</a></li>
-            <li><a href="#Door" class="list-group-item">Porteiro</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="#Engineer" class="list-group-item">Engenheiro</a></li>
-            <li><a href="#Doctor" class="list-group-item">Médico</a></li>
-            <li><a href="#Lawyer" class="list-group-item">Advogado</a></li>
-          </ul>
-        </div>
-        </div>
-        </div>
-      </div>
-      
 <!-- Example row of columns -->
 <div class="row">
-  <div class="col-md-6" align="center">
-    <h2>Você já é um MEI ?</h2>
-    <p>Bem-vindo ao nosso portal MEI a MEI. Acesse agora mesmo a sua conta! </p>
-    <p><a class="btn btn-default" href="#" role="button">Acesse já &raquo;</a></p>
+  <div class="col-md-6" align="center" style="background-color: #FDE01B">
+    <h2 style="color: #104185;">Quer ser divulgado por nós?</h2>
+    </br>
+    <p style="color: #104185;">Descubra como fazer parte do mei-a-MEI</p>
+    <p><a class="btn btn-primary" href="#" role="button">Acesse já &raquo;</a></p>
   </div>
-  
-  <div class="col-md-6" align="center">
-    <h2>Ainda não é MEI?</h2>
-    <p>Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
-    <p><a class="btn btn-default" href="#" role="button">Descobrir &raquo;</a></p>
+  <div class="col-md-6" align="center" style="background-color: #104185">
+    <h2 style="color: #FFFFFF;">Ainda não é MEI?</h2>
+    <p style="color: #FFFFFF;">Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
+    <p><a class="btn btn-primary" href="#" role="button">Descobrir &raquo;</a></p>
   </div>
 </div>
+
