@@ -16,9 +16,8 @@ class MeisController < ApplicationController
   # GET /meis/1.json
   def show
     @comments = Comment.all
-    
-    
     @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
+    
   end
 
   # GET /meis/new
