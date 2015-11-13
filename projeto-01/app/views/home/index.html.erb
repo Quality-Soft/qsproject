@@ -28,6 +28,8 @@
   <div class="col-md-8">
     <!-- < % if @meis != nil %> -->
     <% if @meis.present? %>
+    
+    
       <% @meis.each do |mei| %>
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -44,11 +46,19 @@
           </div>
         </div>
       <% end %>
-    <% else %>
+      
+      
+    <% elsif @meis == [] %>
+    
+    
         <div>
           <p> Não encontramos nenhum mei para esta pesquisa... 
         </div>
+        
+        
     <% end %>
+    
+    
   </div>
     
   <div class="col-md-2">
