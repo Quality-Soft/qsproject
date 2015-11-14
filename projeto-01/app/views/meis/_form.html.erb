@@ -16,13 +16,17 @@
       </ul>
     </div>
     <% end %>
+    
+    
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Seus dados</h3>
       </div>
+      
+      <p>-------------------------------------------------------------------------------------- 
       <div class="panel-body">
           <!--div para agrupar os dados pessoais e da org. -->
-            <!--Acho que aqui deveria conter uma div para agrupar o nome e o seox... -->
+            <!--Acho que aqui deveria conter uma div para agrupar o nome e o sexo... -->
             <div class="field">
               <%= f.label "Seu nome" %><br>
               <%= f.text_field :nome %>
@@ -42,7 +46,7 @@
             <%= f.label "Descrição da Atividade" %><br>
             <%= f.text_area :descricao_atividade %>
           </div>
-        
+        <p>--------------------------------------------------------------------------------------
         <div class="field">
           <%= f.label "CNPJ" %><br>
           <%= f.text_field :cnpj %>
@@ -67,6 +71,8 @@
           <%= f.text_field :email %>
         </div>
         
+        
+        <p>--------------------------------------------------------------------------------------
         <!--Nested form for phone_numbers-->
         <div class="field"><br>
           <%= f.fields_for :phone_numbers do |builder| %>
@@ -103,11 +109,18 @@
           <%= builder.label "Bairro" %><br>
           <%= builder.text_field :bairro %>
           <p>
-          <%= builder.label "cidade" %><br>
+          <%= builder.label "Cidade" %><br>
           <%= builder.text_field :cidade %>
           <% end %>
         </div>
         
+        
+        <div class="field"><br>
+          <%= f.fields_for :acts do |builder| %>
+          <%= builder.label "Área de atuação" %><br>
+          <%= builder.select :occupation, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true %>
+          <% end %>
+        </div>
       
         <br>
         <div class="actions">
