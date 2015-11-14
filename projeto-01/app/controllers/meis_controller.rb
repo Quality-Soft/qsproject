@@ -85,6 +85,8 @@ class MeisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mei_params
-      params.require(:mei).permit(:cnpj, :razao_social, :cpf, :rg, :nome, :sexo, :descricao_atividade, :email)
+      params.require(:mei).permit(:cnpj, :razao_social, :cpf, :rg, :nome, :sexo, :descricao_atividade, :email, acts_attributes: [:mei_id, :occupation_id])
+      #somente em colocar o acts_attributes já faz com que o id do mei passe para o modelo do acts.
+      #só falta adicionar o occupation_id
     end
 end
