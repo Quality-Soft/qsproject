@@ -118,7 +118,19 @@
         <div class="field"><br>
           <%= f.fields_for :acts do |builder| %>
           <%= builder.label "Área de atuação" %><br>
-          <%= builder.select :occupation, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true %>
+          <%= builder.collection_select(:occupation_id, Occupation.all, :id, :area, prompt: true) %>
+          <!-- isso é para pegar somente os dados que estão na tabela do banco -->
+          <!--como era: #select :occupation_id, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true %> -->
+          <% end %>
+        </div>
+        
+        
+        <div class="field"><br>
+          <%= f.fields_for :works do |builder| %>
+          <%= builder.label "Principal Atividade" %><br>
+          <%= builder.collection_select(:job_id, Job.all, :id, :nome, prompt: true) %>
+          <!-- #select :job_id, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true % > --> 
+          <!-- #collection_select("o campo em que vou gravar o parâmetro", o modelo que vou pegar.all, o parâmetro que vou gravar, o que vou mostrar, prompt: true ==> inclue o campo em branco) -->
           <% end %>
         </div>
       
