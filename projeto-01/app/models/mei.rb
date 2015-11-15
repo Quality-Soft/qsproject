@@ -14,6 +14,9 @@ class Mei < ActiveRecord::Base
     accepts_nested_attributes_for :business_address, :allow_destroy => true
     accepts_nested_attributes_for :home_address, :allow_destroy => true
     
+    accepts_nested_attributes_for :acts 
+    accepts_nested_attributes_for :works
+    
     #será necessário para que a função seja completa...
     #accepts_nested_attributes_for :comments, :allow_destroy => true
     

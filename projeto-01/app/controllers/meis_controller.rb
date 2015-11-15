@@ -15,9 +15,15 @@ class MeisController < ApplicationController
   # GET /meis/1
   # GET /meis/1.json
   def show
+<<<<<<< HEAD
+    @mei = Mei.find(params[:id])
+    @comments = Comment.where(meis_id: @mei.id)
+    @comment = Comment.new(:meis_id => '2') #deve ser alterado para esse --> @mei.comments.build
+=======
     @comments = Comment.all
     @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
     
+>>>>>>> master
   end
 
   # GET /meis/new
@@ -26,6 +32,10 @@ class MeisController < ApplicationController
     2.times { @mei.phone_numbers.build }
     @mei.business_address.build
     @mei.home_address.build
+    
+    @mei.acts.build
+    @mei.works.build
+    
   end
 
   # GET /meis/1/edit
@@ -84,6 +94,15 @@ class MeisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mei_params
-      params.require(:mei).permit(:cnpj, :razao_social, :cpf, :rg, :nome, :sexo, :descricao_atividade, :email)
+      params.require(:mei).permit(
+        :cnpj, :razao_social, :cpf, :rg, :nome, :sexo, :descricao_atividade, :email, 
+        acts_attributes: [:mei_id, :occupation_id], #somente em colocar o acts_attributes já faz com que o id do mei passe para o modelo do acts.
+          #só falta adicionar o occupation_id
+        works_attributes: [:mei_id, :job_id],
+        phone_numbers_attributes: [:number, :mei_id],
+        home_address_attributes: [:rua, :bairro, :cidade, :mei_id],
+        business_address_attributes: [:rua, :bairro, :cidade, :mei_id]
+        )
+      
     end
 end
