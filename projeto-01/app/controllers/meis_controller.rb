@@ -16,8 +16,8 @@ class MeisController < ApplicationController
   # GET /meis/1.json
   def show
     @mei = Mei.find(params[:id])
-    @comments = Comment.where(meis_id: @mei.id)
-    @comment = Comment.new(:meis_id => '2') #deve ser alterado para esse --> @mei.comments.build
+    @comments = Comment.where(mei_id: @mei.id)
+    @comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
   end
 
   # GET /meis/new
