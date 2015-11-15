@@ -17,6 +17,7 @@ class MeisController < ApplicationController
   def show
 
     @mei = Mei.find(params[:id])
+<<<<<<< HEAD
     @comments = Comment.where(meis_id: @mei.id)
     @comment = Comment.new(:meis_id => '2') #deve ser alterado para esse --> @mei.comments.build
 
@@ -24,6 +25,10 @@ class MeisController < ApplicationController
     @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
     
 
+=======
+    @comments = Comment.where(mei_id: @mei.id)
+    @comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
+>>>>>>> 143cc6b5b3a8c4935517a4c9524717e6f113713c
   end
 
   # GET /meis/new

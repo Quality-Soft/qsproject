@@ -25,10 +25,10 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(comment_params)
+
     respond_to do |format|
       if @comment.save
-        #Id representativo. É preciso modificar posteriormente.
-        format.html { redirect_to controller: 'meis', action: 'show', id: 4 }
+        format.html { redirect_to @comment, notice: 'Comment was successfully created.' }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CommentsController < ApplicationController
   def update
     respond_to do |format|
       if @comment.update(comment_params)
-        format.html { redirect_to @comment }
+        format.html { redirect_to @comment, notice: 'Comment was successfully updated.' }
         format.json { render :show, status: :ok, location: @comment }
       else
         format.html { render :edit }
@@ -69,6 +69,6 @@ class CommentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params
-      params.require(:comment).permit(:nome, :titulo, :descricao, :meis_id)
+      params.require(:comment).permit(:name, :title, :description, :mei_id)
     end
 end

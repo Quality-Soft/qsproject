@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Titulo</th>
-      <th>Descricao</th>
-      <th>Meis</th>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Mei</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.nome %></td>
-        <td><%= comment.titulo %></td>
-        <td><%= comment.descricao %></td>
-        <td><%= comment.meis_id %></td>
+        <td><%= comment.name %></td>
+        <td><%= comment.title %></td>
+        <td><%= comment.description %></td>
+        <td><%= comment.mei %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
         <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
