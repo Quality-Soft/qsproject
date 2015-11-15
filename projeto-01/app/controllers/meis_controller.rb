@@ -24,6 +24,9 @@ class MeisController < ApplicationController
     @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
     
 
+    @comments = Comment.where(mei_id: @mei.id)
+    @comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
+
   end
 
   # GET /meis/new
