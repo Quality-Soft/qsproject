@@ -20,6 +20,7 @@ class MeisController < ApplicationController
     @comments = Comment.where(mei_id: @mei.id)
     @comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
 
+
     @comments = Comment.all
     @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
     
