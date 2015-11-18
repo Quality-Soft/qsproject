@@ -94,13 +94,13 @@
     <% @comments.each do |comentario| %>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title"><%= comentario.titulo %></h3>
+          <h3 class="panel-title"><%= comentario.title %></h3>
         </div>
         <div class="panel-body">
-          <%= comentario.descricao %>
+          <%= comentario.description %>
           <br>
           <br>
-          <i>por <%= comentario.nome %></i>
+          <i>por <%= comentario.name %></i>
         </div>
       </div>
     <% end %>
