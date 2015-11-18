@@ -40,6 +40,12 @@ class MeisController < ApplicationController
 
   # GET /meis/1/edit
   def edit
+    2.times { @mei.phone_numbers.build }
+    @mei.business_address.build
+    @mei.home_address.build
+    
+    @mei.acts.build
+    @mei.works.build
   end
 
   # POST /meis
