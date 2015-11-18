@@ -28,44 +28,44 @@
             <!--Acho que aqui deveria conter uma div para agrupar o nome e o sexo... -->
             <div class="field">
               <%= f.label "Seu nome" %><br>
-              <%= f.text_field :nome %>
+              <%= f.text_field :nome, class:'form-control'%>
             </div>
             <div class="field">
               <%= f.label :sexo %><br>
-              <%= f.select(:sexo, ["Masculino", "Feminino"]) %>
+              <%= f.select(:sexo, ["Masculino", "Feminino"], class:'form-control') %>
               <!-- < % = f.text_field :sexo %> --
             </div>
             <!--Fim da div-->
           <div class="field">
             <%= f.label "Razão Social" %><br>
-            <%= f.text_field :razao_social %>
+            <%= f.text_field :razao_social, class:'form-control' %>
           </div>
           
           <div class="field">
             <%= f.label "Descrição da Atividade" %><br>
-            <%= f.text_area :descricao_atividade %>
+            <%= f.text_area :descricao_atividade, class:'form-control' %>
           </div>
         <div class="field">
           <%= f.label "CNPJ" %><br>
-          <%= f.text_field :cnpj %>
+          <%= f.text_field :cnpj, class:'form-control' %>
         </div>
         <br>
         
         <br>
         <div class="field">
           <%= f.label "CPF" %><br>
-          <%= f.text_field :cpf %>
+          <%= f.text_field :cpf, class:'form-control' %>
         </div>
         <br>
         <div class="field">
           <%= f.label "RG" %><br>
-          <%= f.text_field :rg %>
+          <%= f.text_field :rg, class:'form-control' %>
         </div>
 
         <br>
         <div class="field">
           <%= f.label :email %><br>
-          <%= f.text_field :email %>
+          <%= f.text_field :email, class:'form-control' %>
         </div>
         
         
@@ -73,7 +73,7 @@
         <div class="field"><br>
           <%= f.fields_for :phone_numbers do |builder| %>
           <p><%= builder.label "Contato" %><br>
-          <%= builder.telephone_field(:number) %>
+          <%= builder.telephone_field(:number)%>
           <% end %>
         </div>
         
@@ -83,13 +83,13 @@
           <p><b>Endereço Comercial</b> 
           <p>
           <%= builder.label "Rua" %><br>
-          <%= builder.text_field :rua %>
+          <%= builder.text_field :rua, class:'form-control' %>
           <p>
           <%= builder.label "Bairro" %><br>
-          <%= builder.text_field :bairro %>
+          <%= builder.text_field :bairro, class:'form-control' %>
           <p>
           <%= builder.label "Cidade" %><br>
-          <%= builder.text_field :cidade %>
+          <%= builder.text_field :cidade, class:'form-control' %>
           <% end %>
         </div>
         
@@ -100,13 +100,13 @@
           <p><b>Endereço Residencial</b> 
           <p>
           <%= builder.label "Rua" %><br>
-          <%= builder.text_field :rua %>
+          <%= builder.text_field :rua, class:'form-control' %>
           <p>
           <%= builder.label "Bairro" %><br>
-          <%= builder.text_field :bairro %>
+          <%= builder.text_field :bairro, class:'form-control' %>
           <p>
           <%= builder.label "Cidade" %><br>
-          <%= builder.text_field :cidade %>
+          <%= builder.text_field :cidade, class:'form-control' %>
           <% end %>
         </div>
         
@@ -114,7 +114,7 @@
         <div class="field"><br>
           <%= f.fields_for :acts do |builder| %>
           <%= builder.label "Área de atuação" %><br>
-          <%= builder.collection_select(:occupation_id, Occupation.all, :id, :area, prompt: true) %>
+          <%= builder.collection_select(:occupation_id, Occupation.all, :id, :area, prompt: true, class:'form-control') %>
           <!-- isso é para pegar somente os dados que estão na tabela do banco -->
           <!--como era: #select :occupation_id, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true %> -->
           <% end %>
@@ -124,7 +124,7 @@
         <div class="field"><br>
           <%= f.fields_for :works do |builder| %>
           <%= builder.label "Principal Atividade" %><br>
-          <%= builder.collection_select(:job_id, Job.all, :id, :nome, prompt: true) %>
+          <%= builder.collection_select(:job_id, Job.all, :id, :nome, prompt: true, class:'form-control') %>
           <!-- #select :job_id, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true % > --> 
           <!-- #collection_select("o campo em que vou gravar o parâmetro", o modelo que vou pegar.all, o parâmetro que vou gravar, o que vou mostrar, prompt: true ==> inclue o campo em branco) -->
           <% end %>
