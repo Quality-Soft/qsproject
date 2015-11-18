@@ -40,6 +40,12 @@ class MeisController < ApplicationController
 
   # GET /meis/1/edit
   def edit
+    2.times { @mei.phone_numbers.build }
+    @mei.business_address.build
+    @mei.home_address.build
+    
+    @mei.acts.build
+    @mei.works.build
   end
 
   # POST /meis
@@ -95,7 +101,7 @@ class MeisController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def mei_params
       params.require(:mei).permit(
-        :id, :cnpj, :razao_social, :cpf, :rg, :nome, :sexo, :descricao_atividade, :email, 
+        :cnpj, :razao_social, :cpf, :rg, :nome, :sexo, :descricao_atividade, :email, 
         acts_attributes: [:mei_id, :occupation_id], #somente em colocar o acts_attributes já faz com que o id do mei passe para o modelo do acts.
           #só falta adicionar o occupation_id
         works_attributes: [:mei_id, :job_id],
