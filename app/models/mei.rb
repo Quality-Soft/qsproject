@@ -24,4 +24,13 @@ class Mei < ActiveRecord::Base
         where("nome LIKE ? OR descricao_atividade LIKE ?", "%#{search_params}%", "%#{search_params}%")
         #where("descricao_atividade LIKE ?", "%#{search_params}%")
     end
+    
+    def self.search_with_category(category_params)
+        joins(:acts).where('acts.occupation_id' => category_params)
+    end 
+    
+    def self.search_with_category_and_search(search_params, category_params)
+        joins(:acts).where("nome LIKE ? OR descricao_atividade LIKE ? AND acts.occupation_id = ?", "%#{search_params}%", "%#{search_params}%", category_params)
+    end 
+
 end
