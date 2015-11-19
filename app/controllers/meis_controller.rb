@@ -7,8 +7,15 @@ class MeisController < ApplicationController
     #caso a página de meis seja acessada sem passar parâmetros, é necessário mostrar todos os existentes
     #pode ser alterado lá na frente, quando for necessário filtrar por categorias, por exemplo
     @meis = Mei.all
+    
     if params[:search]
-      @meis = Mei.search(params[:search])
+        if params[:category] == ""
+          @meis = Mei.search(params[:search])
+        elsif (params[:search] == "") && (params[:category] != "") 
+          @meis = Mei.search_with_category(params[:category])
+        else
+          @meis = Mei.search_with_category_and_search(params[:search], params[:category])
+        end 
     end
   end
 
