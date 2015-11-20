@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
     @mei = Mei.find(params[:mei_id])
     @comment = @mei.comments.create(comment_params)
     redirect_to mei_path(@mei)
-  end
+  end 
   def destroy
     @mei = Mei.find(params[:mei_id])
     @comment = @mei.comments.find(params[:id])
