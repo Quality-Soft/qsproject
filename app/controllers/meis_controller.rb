@@ -18,11 +18,9 @@ class MeisController < ApplicationController
 
     @mei = Mei.find(params[:id])
     @comments = Comment.where(mei_id: @mei.id)
-    @comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
-
-
-    @comments = Comment.all
-    @comment = Comment.new #deve ser alterado para esse --> @mei.comments.build
+    #@comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
+    #@comment = Comment.new#deve ser alterado para esse --> @mei.comments.build
+    #@comments = Comment.all
     
   end
 
@@ -52,7 +50,7 @@ class MeisController < ApplicationController
   # POST /meis.json
   def create
     @mei = Mei.new(mei_params)
-
+  
     respond_to do |format|
       if @mei.save
         format.html { redirect_to @mei }#, notice: 'Mei was successfully created.' }
@@ -107,8 +105,8 @@ class MeisController < ApplicationController
         works_attributes: [:mei_id, :job_id],
         phone_numbers_attributes: [:number, :mei_id],
         home_address_attributes: [:rua, :bairro, :cidade, :mei_id],
-        business_address_attributes: [:rua, :bairro, :cidade, :mei_id]
+        business_address_attributes: [:rua, :bairro, :cidade, :mei_id],
+        comments_attributes: [:name, :title, :description, :mei_id]
         )
-      
     end
 end

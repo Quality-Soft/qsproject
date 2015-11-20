@@ -118,13 +118,32 @@
   </div>
   
   <div class="col-md-8">
-    <%= form_for(@comment) do |f| %>
-      Nome <%= f.text_field :name %><br />
-      Título : <%= f.text_field :title %><br />
-      Descricao: <%= f.text_area :description %><br />
-      mei_id : <%= f.text_field :mei_id %><br />
-    <%= f.submit %>
-<% end %>
+    <h2>Adicione um comentario:</h2>
+    <%= form_for([@mei, @mei.comments.build]) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :title %><br />
+        <%= f.text_area :title %>
+      </div>
+      <div class="field">
+        <%= f.label :description %><br />
+        <%= f.text_area :description %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+    
+    <!--< %= form_for(@comment) do |f| %>
+      Nome < %= f.text_field :name %><br />
+      Título : < %= f.text_field :title %><br />
+      Descricao: < %= f.text_area :description %><br />
+      mei_id : < %= f.text_field :mei_id %><br />
+    < %= f.submit %>
+    < % end %>-->
   </div>
   
 </div>
