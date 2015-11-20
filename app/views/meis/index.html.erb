@@ -7,7 +7,7 @@
    <div class="form-group" align="center">
         <%= form_tag("/meis", :method=> "get", :id=> "search_form") do %>
           <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise"%>
-          <%= select_tag(:category, options_for_select([['Serviço', 1], ['Comércio', 2]], :selected => params[:category]), class: "form-control") %>
+        <%= select_tag(:category, options_for_select([['Serviço', 1], ['Comércio', 2]], :selected => params[:category]), prompt: 'Todas as categorias', class: "form-control") %>
           <!-- < %= collection_select(:params, :category, Occupation.all, :id, :area, include_blank: true) %> -->
           <%= submit_tag "Pesquise", class: "btn btn-primary"%>
         <% end %>
@@ -23,7 +23,13 @@
   <div class="col-md-8">
     <% if @meis == [] %>
         <div>
-          <p> Não encontramos nenhum mei para esta pesquisa...</p> 
+          <%= :alert = 'Não encontramos nenhum mei para esta pesquisa...' %>
+          <div>
+            <div class="alert alert-danger">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
+            </div>
+          </div>
         </div>
     <% else %>
     <% @meis.each do |mei| %>
