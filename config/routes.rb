@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  
-  resources :comments
-  resources :comments
-  #resources :comments
+
   resources :home
-  resources :meis
+  resources :meis do 
+    resources :comments
+  end
   resources :layouts
   root 'home#index'
   get 'home/index' => 'home#index'

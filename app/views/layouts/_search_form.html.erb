@@ -1,6 +1,7 @@
 <%= form_tag(:action=> "index", :controller=> "home", :method=> "get", id: "search-form") do %>
         <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise"%>
-        <%= select_tag(:category, options_for_select([['Serviço', 1], ['Comércio', 2]], :selected => params[:category]), class: "form-control") %>
-        <!-- < %= collection_select(:params, :category, Occupation.all, :id, :area, include_blank: true) %> -->
+        <%= select_tag(:category, options_for_select([['Serviço', 1], ['Comércio', 2]], :selected => params[:category]), prompt: 'Todas as categorias', class: "form-control") %>
+        <!-- < %= collection_select(:params, :jobs, Job.all, :id, :nome, :prompt=> 'Selecionar job') %> -->
+        <%= %>
     <%= submit_tag "Pesquise", class: "btn btn-primary"%>
 <% end %>
