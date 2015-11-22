@@ -49,7 +49,7 @@ group :test do
    gem 'launchy'
    gem 'guard-rspec'
    gem 'factory_girl_rails'
-   gem 'rspec-rails'
+   gem "rspec-rails", ">= 2.0.1"
 end
 
 

@@ -1229,3 +1229,691 @@ Processing by MeisController#index as HTML
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MeisController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"teste"}
+  Rendered meis/search_tmdb.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MyString"], ["title", "MyString"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:40.842321"], ["updated_at", "2015-11-22 18:48:40.842321"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/_form.html.erb (17.7ms)
+  Rendered comments/edit.html.erb (28.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:40.881534"], ["updated_at", "2015-11-22 18:48:40.881534"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:40.883194"], ["updated_at", "2015-11-22 18:48:40.883194"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/index.html.erb (16.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered comments/_form.html.erb (14.4ms)
+  Rendered comments/new.html.erb (19.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:40.934072"], ["updated_at", "2015-11-22 18:48:40.934072"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered comments/show.html.erb (3.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MeisController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"teste"}
+  Rendered meis/search_tmdb.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MyString"], ["title", "MyString"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:45.161979"], ["updated_at", "2015-11-22 18:48:45.161979"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/_form.html.erb (17.6ms)
+  Rendered comments/edit.html.erb (26.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:45.197223"], ["updated_at", "2015-11-22 18:48:45.197223"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:45.198930"], ["updated_at", "2015-11-22 18:48:45.198930"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/index.html.erb (16.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered comments/_form.html.erb (15.6ms)
+  Rendered comments/new.html.erb (20.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:48:45.248400"], ["updated_at", "2015-11-22 18:48:45.248400"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered comments/show.html.erb (3.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MeisController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"teste"}
+  Rendered meis/search_tmdb.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MyString"], ["title", "MyString"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:06.995422"], ["updated_at", "2015-11-22 18:49:06.995422"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/_form.html.erb (18.5ms)
+  Rendered comments/edit.html.erb (27.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:07.032972"], ["updated_at", "2015-11-22 18:49:07.032972"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:07.034530"], ["updated_at", "2015-11-22 18:49:07.034530"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/index.html.erb (14.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered comments/_form.html.erb (13.9ms)
+  Rendered comments/new.html.erb (18.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:07.078601"], ["updated_at", "2015-11-22 18:49:07.078601"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered comments/show.html.erb (3.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MeisController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"teste"}
+  Rendered meis/search_tmdb.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MyString"], ["title", "MyString"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:33.678434"], ["updated_at", "2015-11-22 18:49:33.678434"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/_form.html.erb (17.2ms)
+  Rendered comments/edit.html.erb (25.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:33.713269"], ["updated_at", "2015-11-22 18:49:33.713269"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:33.714825"], ["updated_at", "2015-11-22 18:49:33.714825"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/index.html.erb (15.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered comments/_form.html.erb (15.9ms)
+  Rendered comments/new.html.erb (20.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 18:49:33.762693"], ["updated_at", "2015-11-22 18:49:33.762693"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered comments/show.html.erb (3.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "phone_numbers"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "phone_numbers" ("number", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "meis"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "meis" ("cnpj", "razao_social", "cpf", "rg", "nome", "sexo", "descricao_atividade", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "business_addresses"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "business_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "home_addresses"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "home_addresses" ("rua", "bairro", "cidade", "mei_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+SQLite3::SQLException: table comments has no column named nome: INSERT INTO "comments" ("nome", "titulo", "descricao", "meis_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyText', NULL, '2015-11-22 19:58:58', '2015-11-22 19:58:58', 980190962)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MeisController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"teste"}
+  Rendered meis/search_tmdb.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "MyString"], ["title", "MyString"], ["description", "MyText"], ["created_at", "2015-11-22 20:11:49.144873"], ["updated_at", "2015-11-22 20:11:49.144873"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/_form.html.erb (16.7ms)
+  Rendered comments/edit.html.erb (25.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 20:11:49.178722"], ["updated_at", "2015-11-22 20:11:49.178722"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 20:11:49.180291"], ["updated_at", "2015-11-22 20:11:49.180291"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered comments/index.html.erb (14.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered comments/_form.html.erb (14.5ms)
+  Rendered comments/new.html.erb (19.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("name", "title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Name"], ["title", "Title"], ["description", "MyText"], ["created_at", "2015-11-22 20:11:49.225212"], ["updated_at", "2015-11-22 20:11:49.225212"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered comments/show.html.erb (3.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
