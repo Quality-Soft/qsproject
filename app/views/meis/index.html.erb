@@ -2,29 +2,39 @@
 
 <!-- remoção do formulário de consulta  -->
 <div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-   <div class="form-group" align="center">
-        <%= form_tag("/meis", :method=> "get", :id=> "search_form") do %>
-          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise"%>
+  <div class="container">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="navbar-form">
+   <div class="form-group">
+      <%= form_tag("/meis", :method=> "get", :id=> "search_form") do %>
+        <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise"%>
         <%= select_tag(:category, options_for_select([['Serviço', 1], ['Comércio', 2]], :selected => params[:category]), prompt: 'Todas as categorias', class: "form-control") %>
-          <!-- < %= collection_select(:params, :category, Occupation.all, :id, :area, include_blank: true) %> -->
-          <%= submit_tag "Pesquise", class: "btn btn-primary"%>
-        <% end %>
+        <!-- < %= collection_select(:params, :category, Occupation.all, :id, :area, include_blank: true) %> -->
+        <%= submit_tag "Pesquise", class: "btn btn-primary"%>
+      <% end %>
+    </div>
     </div>
   </div>
-  <div class="col-md-4"></div>
+  <div class="col-md-1"></div>
+  </div>
 </div>
+</br>
               
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-1">
   </div>
   
-  <div class="col-md-8">
+  <div class="col-md-10">
     <% if @meis == [] %>
         <div>
-          <%= :alert = 'Não encontramos nenhum mei para esta pesquisa...' %>
-          <div>
+          <script>
+          function funcao1(){
+            alert("Não encontramos nenhum mei para esta pesquisa.");
+          }
+          funcao1();
+          </script>
+        <div>
             <div class="alert alert-danger">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
@@ -38,6 +48,8 @@
             <h3 class="panel-title"><%= mei.nome %></h3>
            </div>
            <div class="panel-body">
+             <p><strong>Cnpj:</strong></p>
+             <%= mei.cnpj %>
              <p><strong>Descricao da atividade:</strong></p>
              <%= mei.descricao_atividade %>
             <br>
@@ -50,8 +62,7 @@
     <% end %>
     <% end %>
     </div>
-    
-  <div class="col-md-2">
+  <div class="col-md-1">
   </div>
 </div>
 

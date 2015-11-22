@@ -6827,4 +6827,22 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'icofonts';
+  src: url(/assets/glyphicons-halflings-regular);
+  src: url(/assets/icofonts.eot?#iefix) format("embedded-opentype"), 
+    url(/assets/glyphicons-halflings-regular.ttf) format("truetype"), 
+    url(/assets/glyphicons-halflings-regular.woff) format("woff"), 
+    url(/assets/glyphicons-halflings-regular.woff2) format("woff2"), 
+    url(/assets/glyphicons-halflings-regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.area_div{
+  width: 320px;
+  height: 220px;
+  padding: 10px;
+  margin: 0; 
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
