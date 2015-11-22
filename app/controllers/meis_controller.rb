@@ -25,6 +25,7 @@ class MeisController < ApplicationController
 
     @mei = Mei.find(params[:id])
     @comments = Comment.where(mei_id: @mei.id)
+    @mei.business_address.build
     #@comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
     #@comment = Comment.new#deve ser alterado para esse --> @mei.comments.build
     #@comments = Comment.all
