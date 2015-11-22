@@ -17,44 +17,51 @@
             <img class="img-circle" src="http://www.androidrundown.com/wp-content/uploads/2010/07/android_logo-140x140.gif" alt="Generic placeholder image" width="140" height="140">
           </div>
           <div class="col-md-10">
+            
+            <p>
+              <strong>Nome:</strong>
+              <%= @mei.nome %>
+            </p>
+            
+            <p>
+              <strong>Razao social:</strong>
+              <%= @mei.razao_social %>
+            </p>
+            
             <p>
               <strong>Cnpj:</strong>
               <%= @mei.cnpj %>
             </p>
 
-            <p>
-              <strong>Razao social:</strong>
-              <%= @mei.razao_social %>
-            </p>
-
-            <!--<p>
-              <strong>Cpf:</strong>
-              < %= @mei.cpf %>
-            </p>
-
-            <p>
-              <strong>Rg:</strong>
-              < %= @mei.rg %>
-            </p>-->
-
-            <p>
-              <strong>Nome:</strong>
-              <%= @mei.nome %>
-            </p>
-
-            <p>
-              <strong>Sexo:</strong>
-              <%= @mei.sexo %>
-            </p>
+            <!-- aqui existia os campos que decidimos retirar, mas estavam comentados. É interessante retirar mesmo, pois
+            é algo que fica vizível quando observamos o código html no navegador. -->
 
             <p>
               <strong>Descricao atividade:</strong>
               <%= @mei.descricao_atividade %>
             </p>
 
+
+
+            <p>
+              <strong>Contatos:</strong>
+              <br><!-- @contatos é uma variável que recebe os contatos no controlador, a partir de @meis.phone_numbers -->
+                <% @contatos.each do |m| %> 
+                    <p><%= m.number %></p>
+                <% end %>
+            </p>
+            
+            
             <p>
               <strong>Email:</strong>
               <%= @mei.email %>
+            </p>
+            
+            <p>
+              <strong>Endereço Comercial:</strong>
+                <% @endereco_comercial.each do |m| %> 
+                    Rua <%= m.rua %>, <%= m.bairro %>, <%= m.cidade %>
+                <% end %>
             </p>
             
             <p>

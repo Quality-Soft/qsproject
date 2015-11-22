@@ -25,7 +25,8 @@ class MeisController < ApplicationController
 
     @mei = Mei.find(params[:id])
     @comments = Comment.where(mei_id: @mei.id)
-    @mei.business_address.build
+    @contatos = @mei.phone_numbers
+    @endereco_comercial = @mei.business_address
     #@comment = Comment.new(:mei_id => @mei.id) #deve ser alterado para esse --> @mei.comments.build
     #@comment = Comment.new#deve ser alterado para esse --> @mei.comments.build
     #@comments = Comment.all
@@ -46,12 +47,12 @@ class MeisController < ApplicationController
 
   # GET /meis/1/edit
   def edit
-    2.times { @mei.phone_numbers.build }
-    @mei.business_address.build
-    @mei.home_address.build
+    #2.times { @mei.phone_numbers.build }
+    #@mei.business_address.build
+    #@mei.home_address.build
     
-    @mei.acts.build
-    @mei.works.build
+    #@mei.acts.build
+    #@mei.works.build
   end
 
   # POST /meis
