@@ -5,7 +5,7 @@
   <div class="container">
   <div class="col-md-1"></div>
   <div class="col-md-10">
-    <div class="navbar-form">
+    <div class="navbar-form" align = "center">
    <div class="form-group">
       <%= form_tag("/meis", :method=> "get", :id=> "search_form") do %>
         <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Pesquise"%>
