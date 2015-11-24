@@ -7,6 +7,14 @@ Rails.application.routes.draw do
   resources :layouts
   root 'home#index'
   get 'home/index' => 'home#index'
+  get 'comments/new' => 'comments#new'
+  get '/comments/1' => 'comments#show', :id => '1'
+  get '/comments' => 'comments#index'
+  get 'comments/1/edit' => 'comments#edit'
+  post '/comments' => 'comments#create'
+  put '/comments/1' => "comments#update", :id => "1"
+  patch '/comments/1' => "comments#update", :id => "1"
+  delete '/comments/1' => "comments#destroy", :id => "1"
   
   post '/meis/search_tmdb'
   # The priority is based upon order of creation: first created -> highest priority.
