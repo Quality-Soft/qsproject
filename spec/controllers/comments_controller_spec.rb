@@ -49,7 +49,7 @@ RSpec.describe CommentsController, type: :controller do
       comment = Comment.create! valid_attributes
       get :show, {:id => comment.to_param}, valid_session
       expect(assigns(:comment)).to eq(comment)
-    end
+    end 
   end
 
   describe "GET #new" do
