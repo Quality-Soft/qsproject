@@ -8,6 +8,8 @@ class MeisController < ApplicationController
     #pode ser alterado lá na frente, quando for necessário filtrar por categorias, por exemplo
     @meis = Mei.all
     
+    @teste = params[:job]
+    
     if params[:search]
         if params[:category] == ""
           @meis = Mei.search(params[:search])
