@@ -1,5 +1,68 @@
+
+<div class="jumbotron">
+  <div class="container" align="center">
+      <img alt="mei" src="/assets/bonecomeis.png" />
+      <h1 style="color: #104185">Encontre os MEIs de forma rápida e fácil</h1>
+      <p style="color: #104185">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na cidade do Recife</p>
+      <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form">
+            <div class="row" align="center">
+              <div class="col-md-12">
+              <div class="form-group">
+                  <%= render "layouts/search_form" %>
+              </div>
+          </div>
+            </div>
+          </form>
+        </div>
+      </div>
+</div>
+
 <div class="row">
-  <div class="col-md-12">
+    <!-- < % if @meis != nil %> -->
+    <% if @meis.present? %>
+    
+      <% @meis.each do |mei| %>
+      
+      <div class="col-xs-6 col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= mei.nome %></h3>
+           </div>
+           <div class="panel-body">
+             <p><strong>Cnpj:</strong></p>
+             <%= mei.cnpj %>
+             <p><strong>Descricao da atividade: <%= @teste %> </strong></p>
+             <%= mei.descricao_atividade %>
+            <br>
+            <div>
+              <br>
+            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+      <%= will_paginate @meis, renderer: BootstrapPagination::Rails %>
+    <% elsif @meis == [] %>
+    <div class="col-md-6 col-md-offset-3">
+          <script>
+          function funcao1(){
+            alert("Não encontramos nenhum mei para esta pesquisa.");
+          }
+          funcao1();
+          </script>
+          <div class="alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
+          </div>
+    </div>
+    <% end %>
+
+</div>
+
+<div class="row" style="background-color: #FDE01B">
+  <div class="col-md-6">
 <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -40,91 +103,32 @@
         </div>
       </div>
     </div><!-- /.carousel -->
-    </div>
-</div>
-
-<div class="jumbotron">
-  <div class="container" align="center">
-      <img alt="mei" src="/assets/bonecomeis.png" />
-      <h1 style="color: #104185">Encontre os MEIs de forma rápida e fácil</h1>
-      <p style="color: #104185">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na cidade do Recife</p>
-      <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form">
-            <div class="row" align="center">
-              <div class="col-md-12">
-              <div class="form-group">
-                  <%= render "layouts/search_form" %>
-              </div>
-          </div>
-            </div>
-          </form>
-        </div>
-      </div>
-</div>
-
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
-    <!-- < % if @meis != nil %> -->
-    <% if @meis.present? %>
     
-      <% @meis.each do |mei| %>
-      
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title"><%= mei.nome %></h3>
-           </div>
-           <div class="panel-body">
-             <p><strong>Cnpj:</strong></p>
-             <%= mei.cnpj %>
-             <p><strong>Descricao da atividade: <%= @teste %> </strong></p>
-             <%= mei.descricao_atividade %>
-            <br>
-            <div>
-              <br>
-            <%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    <% elsif @meis == [] %>
-        <div>
-          <div>
-          <script>
-          function funcao1(){
-            alert("Não encontramos nenhum mei para esta pesquisa.");
-          }
-          funcao1();
-          </script>
-        <div>
-          <div class="alert alert-danger">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
-          </div>
-        </div>
-    <% end %>
-  </div>
-  <div class="col-md-1"></div>
+    </div>
+    <!--
+    <div class="col-xs-6 col-md-3" align="center" style="background-color: #FDE01B">
+      <div class="area_div">
+        <h2 style="color: #104185;">Quer ser divulgado por nós?</h2>
+        <p style="color: #104185;">Descubra como fazer parte do mei-a-MEI</p>
+        </br>
+        <p><a class="btn btn-primary" href="#" role="button">Acesse já &raquo;</a></p>  
+      </div>
+    </div>
+    
+    <div class="col-md-6" align="center" style="background-color: #104185" >
+      <div class="area_div">
+        <h2 style="color: #FFFFFF;">Ainda não é MEI?</h2>
+        <p style="color: #FFFFFF;">Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
+        <p><a class="btn btn-primary" href="#" role="button">Descobrir &raquo;</a></p>  
+      </div>
+    </div>
+    -->
 </div>
+
+
+
 <!-- Example row of columns -->
 <div class="row">
-  <div class="col-md-12" align="center" style="background-color: #FDE01B">
-    <div class="area_div">
-    <h2 style="color: #104185;">Quer ser divulgado por nós?</h2>
-    <p style="color: #104185;">Descubra como fazer parte do mei-a-MEI</p>
-    </br>
-    <p><a class="btn btn-primary" href="#" role="button">Acesse já &raquo;</a></p>  
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12" align="center" style="background-color: #104185">
-    <div class="area_div">
-    <h2 style="color: #FFFFFF;">Ainda não é MEI?</h2>
-    <p style="color: #FFFFFF;">Descubra como se tornar um MEI, seus benebícios e como participar do mei a mei.</p>
-    </br>
-    <p><a class="btn btn-primary" href="#" role="button">Descobrir &raquo;</a></p>  
-    </div>
-  </div>
+  
 </div>
 

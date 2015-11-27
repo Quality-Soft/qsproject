@@ -6,35 +6,35 @@ class MeisController < ApplicationController
   def index
     #caso a página de meis seja acessada sem passar parâmetros, é necessário mostrar todos os existentes
     #pode ser alterado lá na frente, quando for necessário filtrar por categorias, por exemplo
-    @meis = Mei.all
+    @meis = Mei.all.paginate(:page => params[:page], :per_page => 4)
     
     if params[:search]
       if params[:search] == ""
           if params[:category] == ""
               if params[:job] == ""
-                  @meis = Mei.all
+                  @meis = Mei.all.paginate(:page => params[:page], :per_page => 4)
               else
-                  @meis = Mei.search_with_job(params[:job])
+                  @meis = Mei.search_with_job(params[:job]).paginate(:page => params[:page], :per_page => 4)
               end
           else
               if params[:job] == ""
-                  @meis = Mei.search_with_category(params[:category])
+                  @meis = Mei.search_with_category(params[:category]).paginate(:page => params[:page], :per_page => 4)
               else
-                  @meis = Mei.search_with_category_and_job(params[:category], params[:job])
+                  @meis = Mei.search_with_category_and_job(params[:category], params[:job]).paginate(:page => params[:page], :per_page => 4)
               end
           end
       else
           if params[:category] == ""
               if params[:job] == ""
-                  @meis = Mei.search(params[:search])
+                  @meis = Mei.search(params[:search]).paginate(:page => params[:page], :per_page => 4)
               else
-                  @meis = Mei.search_with_job_and_search(params[:job], params[:search])
+                  @meis = Mei.search_with_job_and_search(params[:job], params[:search]).paginate(:page => params[:page], :per_page => 4)
               end
           else
               if params[:job] == ""
-                  @meis = Mei.search_with_category_and_search(params[:category], params[:search])
+                  @meis = Mei.search_with_category_and_search(params[:category], params[:search]).paginate(:page => params[:page], :per_page => 4)
               else
-                  @meis = Mei.search_with_search_and_category_and_job(params[:search], params[:category], params[:job])
+                  @meis = Mei.search_with_search_and_category_and_job(params[:search], params[:category], params[:job]).paginate(:page => params[:page], :per_page => 4)
               end
           end
       end              
