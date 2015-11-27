@@ -6313,6 +6313,7 @@ button.close {
 }
 .carousel {
   position: relative;
+  margin-bottom: 20px; //Inseri um padding para manter o carousel afastado das divs
 }
 .carousel-inner {
   position: relative;
@@ -6838,11 +6839,6 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-.area_div{
-  width: 320px;
-  height: 220px;
-  padding: 10px;
-  margin: 0; 
-}
+
 
 /*# sourceMappingURL=bootstrap.css.map */
