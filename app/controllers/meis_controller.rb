@@ -8,16 +8,36 @@ class MeisController < ApplicationController
     #pode ser alterado lá na frente, quando for necessário filtrar por categorias, por exemplo
     @meis = Mei.all
     
-    @teste = params[:job]
-    
     if params[:search]
-        if params[:category] == ""
-          @meis = Mei.search(params[:search])
-        elsif (params[:search] == "") && (params[:category] != "") 
-          @meis = Mei.search_with_category(params[:category])
-        else
-          @meis = Mei.search_with_category_and_search(params[:search], params[:category])
-        end 
+      if params[:search] == ""
+          if params[:category] == ""
+              if params[:job] == ""
+                  @meis = Mei.all
+              else
+                  @meis = Mei.search_with_job(params[:job])
+              end
+          else
+              if params[:job] == ""
+                  @meis = Mei.search_with_category(params[:category])
+              else
+                  @meis = Mei.search_with_category_and_job(params[:category], params[:job])
+              end
+          end
+      else
+          if params[:category] == ""
+              if params[:job] == ""
+                  @meis = Mei.search(params[:search])
+              else
+                  @meis = Mei.search_with_job_and_search(params[:job], params[:search])
+              end
+          else
+              if params[:job] == ""
+                  @meis = Mei.search_with_category_and_search(params[:category], params[:search])
+              else
+                  @meis = Mei.search_with_search_and_category_and_job(params[:search], params[:category], params[:job])
+              end
+          end
+      end              
     end
   end
 
