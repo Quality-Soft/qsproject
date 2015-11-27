@@ -1,12 +1,14 @@
 Atividades permitidas para os MEIs:
 
+--Esses são para testes--
+INSERT INTO jobs (id, nome, created_at, updated_at) VALUES (1, "ABATEDOR(A) DE AVES", "2015-11-08 17:26:13.616626", "2015-11-08 17:26:13.616626");
+INSERT INTO jobs (id, nome, created_at, updated_at) VALUES (2, "ABATEDOR(A) DE AVES COM COMERCIALIZAÇÃO DO PRODUTO", "2015-11-08 17:26:13.616626", "2015-11-08 17:26:13.616626");
+INSERT INTO jobs (id, nome, created_at, updated_at) VALUES (3, "ACABADOR(A) DE CALÇADOS", "2015-11-08 17:26:13.616626", "2015-11-08 17:26:13.616626");
+INSERT INTO jobs (id, nome, created_at, updated_at) VALUES (4, "AÇOUGUEIRO(A)", "2015-11-08 17:26:13.616626", "2015-11-08 17:26:13.616626");
+INSERT INTO jobs (id, nome, created_at, updated_at) VALUES (5, "ADESTRADOR(A) DE ANIMAIS", "2015-11-08 17:26:13.616626", "2015-11-08 17:26:13.616626");
 
-INSERT INTO jobs (id, nome, created_at) VALUES (1, "ABATEDOR(A) DE AVES", );
-INSERT INTO jobs (id, nome, created_at) VALUES (2, "ABATEDOR(A) DE AVES COM COMERCIALIZAÇÃO DO PRODUTO", );
-INSERT INTO jobs (id, nome, created_at) VALUES (3, "ACABADOR(A) DE CALÇADOS", );
-INSERT INTO jobs (id, nome, created_at) VALUES (4, "AÇOUGUEIRO(A)", );
-INSERT INTO jobs (id, nome, created_at) VALUES (5, "ADESTRADOR(A) DE ANIMAIS", );
-INSERT INTO jobs (id, nome, created_at) VALUES (6, "ADESTRADOR(A) DE ANIMAIS (Redação dada pela Resolução CGSN nº 117/2014)", );
+
+
 INSERT INTO jobs (id, nome, created_at) VALUES (7, "ADESTRADOR(A) DE CÃES DE GUARDA", );
 INSERT INTO jobs (id, nome, created_at) VALUES (8, "AGENTE DE CORREIO FRANQUEADO E PERMISSIONÁRIO", );
 INSERT INTO jobs (id, nome, created_at) VALUES (9, "AGENTE DE VIAGENS", );
