@@ -10,8 +10,7 @@ Feature: PROCURAR MEI POR CATEGORIA
     Scenario: Deve retornar somente os MEI's que estão cadastrados com a categoria de comercio
         Given I am on the meis page
         When I select "Comércio" from "category"
-        And I fill in "search" with ""
-        
+        And I fill in "search" with "bangalabanga"
         #Then page should have notice message "Your message was successfully delivered."
         Then the page should display as a result "EMERSON OSEILDO"
 

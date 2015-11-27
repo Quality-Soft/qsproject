@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'comments/new' => 'comments#new'
   get '/comments/1' => 'comments#show', :id => '1'
   get '/comments' => 'comments#index'
-  get 'comments/1/edit' => 'comments#edit'
+  get 'comments/:id/edit' => 'comments#edit'
   post '/comments' => 'comments#create'
   put '/comments/1' => "comments#update", :id => "1"
   patch '/comments/1' => "comments#update", :id => "1"
