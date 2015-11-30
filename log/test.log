@@ -3169,3 +3169,1508 @@ Processing by MeisController#index as HTML
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 22:47:54 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (10.6ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (26.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 284ms (Views: 245.6ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 22:47:55 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.0ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 22:50:37 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (13.3ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 241ms (Views: 203.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 22:50:37 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 22:59:23 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (12.6ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (40.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 341ms (Views: 278.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 22:59:24 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:00:10 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (13.3ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (34.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 262ms (Views: 223.0ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:00:10 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:00:38 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (12.9ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 326ms (Views: 268.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:00:38 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.4ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:01:27 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (17.9ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 326ms (Views: 268.3ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:01:28 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:04:08 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.4ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (18.8ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 250ms (Views: 218.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:04:08 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.6ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:04:49 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (12.5ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (37.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 247ms (Views: 215.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:04:50 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.9ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:05:58 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (13.7ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (39.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 258ms (Views: 214.1ms | ActiveRecord: 5.1ms)
+  [1m[35m (2.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:05:58 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:06:58 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (11.8ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 303ms (Views: 257.7ms | ActiveRecord: 0.7ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:06:58 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.8ms)
+  Rendered home/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:06:58 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.7ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:09:50 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (2.6ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (18.8ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (47.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 270ms (Views: 228.4ms | ActiveRecord: 3.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:09:50 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:09:50 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.3ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:11:07 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.3ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (14.0ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (36.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 300ms (Views: 252.0ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:11:07 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.8ms)
+  Rendered home/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.3ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:11:07 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:11:07 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.3ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:13:43 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (14.2ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (40.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 273ms (Views: 241.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:13:43 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:13:43 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.1ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:13:43 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (2.5ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:13:43 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:16:35 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (22.6ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (48.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 340ms (Views: 273.5ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:16:35 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.6ms)
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:16:35 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.9ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:16:35 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:16:35 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.7ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:17:52 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (2.4ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (16.4ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (32.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 270ms (Views: 227.4ms | ActiveRecord: 3.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:17:52 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:17:52 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.1ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:17:52 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.1ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:17:52 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:18:32 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (20.4ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (80.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 371ms (Views: 313.5ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:18:33 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.8ms)
+  Rendered home/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:18:33 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:18:33 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:18:33 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.0ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:21:56 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.4ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (9.7ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 261ms (Views: 220.8ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:21:56 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.6ms)
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:21:56 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.1ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:21:56 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.0ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:21:56 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:22:34 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (14.9ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (33.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 272ms (Views: 239.7ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:22:34 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.3ms)
+  Rendered home/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:22:34 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (3.9ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:22:34 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (0.9ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:22:34 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:23:17 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (14.6ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 300ms (Views: 241.4ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:23:17 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  Rendered home/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:23:17 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:23:17 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:23:17 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:27:11 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (17.8ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 301ms (Views: 241.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:27:12 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.0ms)
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:27:12 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:27:12 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.1ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:27:12 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (12.3ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:28:28 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (9.4ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 263ms (Views: 230.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:28:28 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.2ms)
+  Rendered home/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:28:28 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.3ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:28:28 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:28:28 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:29:19 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (15.7ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 253ms (Views: 221.4ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:29:20 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:29:20 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (3.0ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:29:20 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.0ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:29:20 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:30:09 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (9.8ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 243ms (Views: 196.9ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:30:09 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:30:09 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:30:09 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.0ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:30:09 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.0ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:31:01 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (20.6ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 330ms (Views: 279.4ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:31:01 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.1ms)
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:31:01 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.3ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:31:01 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.9ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:31:01 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.8ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:32:50 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (11.9ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (34.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 223ms (Views: 192.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:32:50 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.7ms)
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:32:50 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:32:50 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:32:50 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:33:53 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (5.8ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (13.9ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (28.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 220ms (Views: 180.0ms | ActiveRecord: 6.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:33:53 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.2ms)
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:33:53 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:33:53 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  [1m[36mMei Load (0.3ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:33:53 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.1ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:37:12 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (26.5ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (46.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 361ms (Views: 288.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:37:13 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.2ms)
+  Rendered home/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:37:13 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.7ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:37:13 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.7ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:37:13 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:37:48 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (28.4ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (48.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 273ms (Views: 233.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-27 23:37:49 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:37:49 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.1ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-27 23:37:49 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.1ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-27 23:37:49 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.2ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/meis" for 127.0.0.1 at 2015-11-30 20:22:36 +0000
+Processing by MeisController#index as HTML
+  [1m[36mOccupation Load (0.3ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (19.5ms)
+  [1m[36mMei Load (0.2ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (42.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 345ms (Views: 308.6ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/home" for 127.0.0.1 at 2015-11-30 20:22:37 +0000
+Processing by HomeController#index as HTML
+  [1m[35mOccupation Load (0.3ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (2.1ms)
+  Rendered home/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+Started GET "/meis" for 127.0.0.1 at 2015-11-30 20:22:37 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.2ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.4ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+Started GET "/meis?utf8=%E2%9C%93&search=&category=&job=&commit=Pesquise" for 127.0.0.1 at 2015-11-30 20:22:37 +0000
+Processing by MeisController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "category"=>"", "job"=>"", "commit"=>"Pesquise"}
+  [1m[36mOccupation Load (0.2ms)[0m  [1mSELECT "occupations".* FROM "occupations"[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered layouts/_search_form.html.erb (1.5ms)
+  [1m[36mMei Load (0.1ms)[0m  [1mSELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0[0m
+  Rendered meis/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/meis" for 127.0.0.1 at 2015-11-30 20:22:37 +0000
+Processing by MeisController#index as HTML
+  [1m[35mOccupation Load (0.1ms)[0m  SELECT "occupations".* FROM "occupations"
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered layouts/_search_form.html.erb (1.6ms)
+  [1m[35mMei Load (0.1ms)[0m  SELECT  "meis".* FROM "meis" LIMIT 4 OFFSET 0
+  Rendered meis/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
