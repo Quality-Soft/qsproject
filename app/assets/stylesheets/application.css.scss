@@ -6314,6 +6314,7 @@ button.close {
 .carousel {
   position: relative;
   margin-bottom: 20px; //Inseri um padding para manter o carousel afastado das divs
+  margin-top: 20px;
 }
 .carousel-inner {
   position: relative;
@@ -6507,6 +6508,11 @@ button.close {
 }
 .carousel-caption .btn {
   text-shadow: none;
+}
+.footer-search{
+  padding: 20px;
+  border-top: 1px solid #d6e1ee;
+  background: #f6f9fc;
 }
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
