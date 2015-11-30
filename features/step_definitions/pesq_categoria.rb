@@ -2,12 +2,22 @@ Given(/^I am on the meis page$/) do
   visit(meis_path)
 end
 
+Given(/^I am on the home page$/) do
+  visit(:home)
+end
+
+When(/^I go to meis page$/) do
+  visit(:meis)
+end
 
 When(/^I select "(.*?)" from "(.*?)"$/) do |arg1, category|
-  select("Comércio", :from => category)
+  page.select_option("Comércio", :from => category)
   #select(value, :from => field)
 end
-      
+
+When(/^I press "(.*?)"$/) do |arg1|
+  click_button("Pesquise")
+end
       
 When(/^I fill in "(.*?)" with "(.*?)"$/) do |arg1, arg2|
    fill_in(arg1, :with => arg2)
@@ -23,6 +33,8 @@ end
 Then(/^page should have javascript message "(.*?)"$/) do |arg1|
   page.has_text?("Não encontramos nenhum mei para esta pesquisa.")
 end
+
+
 
 =begin
 page.has_text?('lorem ipsum', between: 2..4)
