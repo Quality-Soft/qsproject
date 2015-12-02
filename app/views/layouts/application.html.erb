@@ -10,18 +10,12 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href="starter-template.css" rel="stylesheet">
-  
 </head>
 <body>
     <%= render 'layouts/header' %>
-     
-      <%= yield %>
-      
-    <div class="row">
-      <div class="col-md-12"> 
-        <%= render 'layouts/footer' %>
-      </div>
-    </div>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
