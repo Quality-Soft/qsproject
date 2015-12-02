@@ -55,7 +55,6 @@
             </div>
           </div>
         </div>
-        
     <% end %>
     <%= will_paginate @meis, renderer: BootstrapPagination::Rails %>
     <% end %>
@@ -63,45 +62,5 @@
   <div class="col-md-1">
   </div>
 </div>
-
-<!--
-<table>
-  <thead>
-    <tr>
-      <th>Cnpj</th>
-      <th>Razao social</th>
-      <th>Cpf</th>
-      <th>Rg</th>
-      <th>Nome</th>
-      <th>Sexo</th>
-      <th>Descricao atividade</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    < % @meis.each do |mei| %>
-      <tr>
-        <td>< %= mei.cnpj %></td>
-        <td>< %= mei.razao_social %></td>
-        <td>< %= mei.cpf %></td>
-        <td>< %= mei.rg %></td>
-        <td>< %= mei.nome %></td>
-        <td>< %= mei.sexo %></td>
-        <td>< %= mei.descricao_atividade %></td>
-        <td>< %= mei.email %></td>
-        <td>< %= link_to 'Show', mei %></td>
-        <td>< %= link_to 'Edit', edit_mei_path(mei) %></td>
-        <td>< %= link_to 'Destroy', mei, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    < % end %>
-  </tbody>
-</table>
--->
-
 <br>
-
-
-
 <hr>

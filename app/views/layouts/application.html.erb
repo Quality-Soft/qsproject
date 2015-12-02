@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
-  
-<head>
-  <link href="/assets/favicon1.ico" rel="shortcut icon" type="image/x-icon" />
-  <title>mei-a-MEI</title>
-  <meta charset="UTF-8">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-  <link href="starter-template.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <link href="/assets/favicon1.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>mei-a-MEI</title>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
     <%= render 'layouts/header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -24,6 +21,5 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
-
+  </body>
 </html>
