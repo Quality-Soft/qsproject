@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :home
+  resources :meis do 
+    resources :comments
+  end
+  resources :layouts
+  root 'home#index'
+  
   get 'contact_us/contacts'
 
   get 'doubt/doubts'
@@ -8,13 +15,7 @@ Rails.application.routes.draw do
 
   get 'partner/partnes'
 
-  get site_map => 'site_map#map'
-  resources :home
-  resources :meis do 
-    resources :comments
-  end
-  resources :layouts
-  root 'home#index'
+  get 'site_map/map'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
