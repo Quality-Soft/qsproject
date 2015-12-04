@@ -6850,5 +6850,16 @@ button.close {
   padding-top: 20px;
   box-shadow: 10px 10px 5px ;
 }
+#listMap ul li{
+  font-size: 1.5em; 
+  list-style-type: circle;
+}
+#listMap ul li a{
+  text-decoration: none;
+}
+#listMap ul li a:hover{
+  color: blue; 
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */
