@@ -7,15 +7,17 @@ Rails.application.routes.draw do
   resources :layouts
   root 'home#index'
   
-  get 'contact_us/contacts'
+  get 'duvidas' => 'doubt#doubts'
+  
+  get 'FaleConosco' =>'contact_us#contacts'
 
-  get 'doubt/doubts'
+  get 'QuemSomosNos' => 'who_are_we#waw'
 
-  get 'who_are_we/waw'
+  get 'Parceiros' => 'partner#partnes'
 
-  get 'partner/partnes'
-
-  get 'site_map/map'
+  get 'MapaDoSite' => 'site_map#map'
+  
+  get 'Ranking' => 'ranking#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
