@@ -11,7 +11,17 @@ When(/^I go to meis page$/) do
 end
 
 When(/^I select "(.*?)" from "(.*?)"$/) do |arg1, category|
-  page.select_option("Comércio", :from => category)
+  select("Comércio", :from => "category").click
+  #find("category[value='Comércio']").click
+  #select("category[value='2']", text: 'Comércio').select_option
+  #select "Comércio", from: "category", visible: false
+  #select(value, :from => field)
+end
+
+
+When(/^I select (\d+) from "(.*?)"$/) do |arg1, category|
+  select(2, :from => "category")
+  #select "Comércio", from: "category", visible: false
   #select(value, :from => field)
 end
 
