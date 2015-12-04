@@ -16,10 +16,9 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 /*# sourceMappingURL=bootstrap.min.css.map */
-
-
 /*# sourceMappingURL=bootstrap.min.css.map */
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1112,7 +1111,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -6314,6 +6313,7 @@ button.close {
 .carousel {
   position: relative;
   margin-bottom: 20px; //Inseri um padding para manter o carousel afastado das divs
+  margin-top: 20px;
 }
 .carousel-inner {
   position: relative;
@@ -6507,6 +6507,11 @@ button.close {
 }
 .carousel-caption .btn {
   text-shadow: none;
+}
+.footer-search{
+  padding: 20px;
+  border-top: 1px solid #d6e1ee;
+  background: #f6f9fc;
 }
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
@@ -6838,6 +6843,22 @@ button.close {
     url(/assets/glyphicons-halflings-regular.svg) format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+#DivHome{
+  margin-top: 20px;
+  padding-top: 20px;
+  box-shadow: 5px 5px 15px #888888;
+}
+#listMap ul li{
+  font-size: 1.5em; 
+  list-style-type: circle;
+}
+#listMap ul li a{
+  text-decoration: none;
+}
+#listMap ul li a:hover{
+  color: blue; 
 }
 
 

@@ -32,6 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'will_paginate', '~> 3.0.6' 
 gem 'will_paginate-bootstrap'
+gem 'font-awesome-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

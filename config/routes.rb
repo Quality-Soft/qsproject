@@ -6,17 +6,19 @@ Rails.application.routes.draw do
   end
   resources :layouts
   root 'home#index'
-  get 'home/index' => 'home#index'
-  get 'comments/new' => 'comments#new'
-  get '/comments/1' => 'comments#show', :id => '1'
-  get '/comments' => 'comments#index'
-  get 'comments/:id/edit' => 'comments#edit'
-  post '/comments' => 'comments#create'
-  put '/comments/1' => "comments#update", :id => "1"
-  patch '/comments/1' => "comments#update", :id => "1"
-  delete '/comments/1' => "comments#destroy", :id => "1"
   
-  post '/meis/search_tmdb'
+  get 'duvidas' => 'doubt#doubts'
+  
+  get 'FaleConosco' =>'contact_us#contacts'
+
+  get 'QuemSomosNos' => 'who_are_we#waw'
+
+  get 'Parceiros' => 'partner#partnes'
+
+  get 'MapaDoSite' => 'site_map#map'
+  
+  get 'Ranking' => 'ranking#index'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
