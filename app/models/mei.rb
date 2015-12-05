@@ -1,4 +1,17 @@
 class Mei < ActiveRecord::Base
+    
+    validates_uniqueness_of :cnpj, message: " já cadastrado"
+    validates_uniqueness_of :razao_social, message: " já cadastrada"
+    validates_uniqueness_of :cpf, message: " já cadastrado"
+    validates_uniqueness_of :rg, message: " já cadastrado"
+    validates_uniqueness_of :nome, message: " já cadastrado"
+    
+    validates_presence_of :cnpj, message: " não pode ficar vazio"
+    validates_presence_of :razao_social, message: " não pode ficar vazio"
+    validates_presence_of :cpf, message: " não pode ficar vazio"
+    validates_presence_of :rg, message: " não pode ficar vazio"
+    validates_presence_of :nome, message: " não pode ficar vazio"
+    
     has_many :phone_numbers, :dependent => :destroy
     has_many :business_address, :dependent => :destroy
     has_many :home_address, :dependent => :destroy
