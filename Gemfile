@@ -28,6 +28,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+#Use gem devise for autentication
+#gem 'devise'
+gem 'devise', '~> 3.5', '>= 3.5.2'
+
 
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'will_paginate', '~> 3.0.6' 

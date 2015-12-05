@@ -1,22 +1,20 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+
   resources :home
+  
   resources :meis do 
     resources :comments
   end
   resources :layouts
-  root 'home#index'
+  root :to => 'home#index'
   
   get 'duvidas' => 'doubt#doubts'
-  
   get 'FaleConosco' =>'contact_us#contacts'
-
   get 'QuemSomosNos' => 'who_are_we#waw'
-
   get 'Parceiros' => 'partner#partnes'
-
   get 'MapaDoSite' => 'site_map#map'
-  
   get 'Ranking' => 'ranking#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
