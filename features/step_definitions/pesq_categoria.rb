@@ -11,12 +11,14 @@ When(/^I go to meis page$/) do
 end
 
 When(/^I select "(.*?)" from "(.*?)"$/) do |arg1, category|
-  page.select_option("Comércio", :from => category)
+  #page.select_option("Comércio", :from => category)
+  #find("category[value='2']").click
+  page.find_by_id('areaatuacao').find("category[value='2']").select_option
   #select(value, :from => field)
 end
 
 When(/^I press "(.*?)"$/) do |arg1|
-  click_button("Pesquise")
+  click_button(placeholder: "Pesquise")
 end
       
 When(/^I fill in "(.*?)" with "(.*?)"$/) do |arg1, arg2|
