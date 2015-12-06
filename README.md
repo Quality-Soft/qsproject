@@ -20,8 +20,6 @@ Emmerson Santos |  Desenvolvedor  Back-End e Teste
 
 Júlio Melo      |  Desenvolvedor  Back-End e Teste
 
-Pedro Henrique  |  DataBase Developer e programador
-
 Ayrton França   |  Desenvolvedor Front-End e administrativo
 
 
