@@ -29,7 +29,7 @@
           <div class="caption">
             <center><h3><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
             <p><strong>Descricao da atividade:</strong></p>
-            <%= mei.descricao_atividade %>
+            <%= mei.descricao_atividade.capitalize %>
             <br><hr>
             <center><%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%></center>
           </div>
