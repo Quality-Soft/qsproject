@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :layouts
   root :to => 'home#index'
   
+
   get 'duvidas' => 'doubt#doubts'
   get 'FaleConosco' =>'contact_us#contacts'
   get 'QuemSomosNos' => 'who_are_we#waw'
