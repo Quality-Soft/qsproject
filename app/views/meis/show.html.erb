@@ -9,7 +9,7 @@
   <div class="col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= @mei.nome %></h3>
+        <h3 class="panel-title"><%= @mei.nome.split.map(&:capitalize).join(' ') %></h3> <!-- a primeira letra de cada palavra maiúscula -->
       </div>
       <div class="panel-body">
         <div class="row">
@@ -20,12 +20,12 @@
             
             <p>
               <strong>Nome:</strong>
-              <%= @mei.nome %>
+              <%= @mei.nome.split.map(&:capitalize).join(' ') %> <!-- a primeira letra de cada palavra maiúscula -->
             </p>
             
             <p>
               <strong>Razao social:</strong>
-              <%= @mei.razao_social %>
+              <%= @mei.razao_social.split.map(&:capitalize).join(' ') %> <!-- a primeira letra de cada palavra maiúscula -->
             </p>
             
             <p>
@@ -38,7 +38,7 @@
 
             <p>
               <strong>Descricao atividade:</strong>
-              <%= @mei.descricao_atividade %>
+              <%= @mei.descricao_atividade.capitalize %> <!-- apenas a primeira letra maiúscula -->
             </p>
 
 
@@ -97,25 +97,31 @@
   </div>
   
   <div class="col-md-8">
-    <h3>Veja o que estão falando sobre <%= @mei.nome %></h3>
-    
-    <% @comments.each do |comentario| %>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><%= comentario.title %></h3>
-        </div>
-        <div class="panel-body">
-          <%= comentario.description %>
-          <br>
-          <br>
-          <i>por <%= comentario.name %></i>
-        </div>
+    <h3>Veja o que estão falando sobre <%= @mei.nome.split(" ").first.capitalize %>:</h3>
+    <% if @comments.empty? %>
+      <div class="alert alert-info">
+        Este MEI ainda não possui nenhum comentário...
       </div>
+    <% else %>
+        <% @comments.each do |comentario| %>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= comentario.title %></h3>
+            </div>
+            <div class="panel-body">
+              <%= comentario.description %>
+              <br>
+              <br>
+              <i>por <%= comentario.name %></i>
+            </div>
+          </div>
+        <% end %>
     <% end %>
   </div>
   
   <div class="col-md-2">
   </div>
+  
 </div>
 
 <!-- Postar Comentarios -->
