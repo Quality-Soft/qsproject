@@ -9,7 +9,7 @@
   <div class="col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= @mei.nome.split.map(&:capitalize).join(' ') %></h3> <!-- a primeira letra de cada palavra maiúscula -->
+        <h3 class="panel-title"><%= @mei.nome.split(" ").first.capitalize %> <%= @mei.nome.split(" ").last.capitalize %></h3> <!-- a primeira letra de cada palavra maiúscula -->
       </div>
       <div class="panel-body">
         <div class="row">
@@ -20,7 +20,7 @@
             
             <p>
               <strong>Nome:</strong>
-              <%= @mei.nome.split.map(&:capitalize).join(' ') %> <!-- a primeira letra de cada palavra maiúscula -->
+              <%= @mei.nome.split(" ").first.capitalize %> <%= @mei.nome.split(" ").last.capitalize %> <!-- a primeira letra de cada palavra maiúscula -->
             </p>
             
             <p>
