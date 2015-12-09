@@ -41,13 +41,13 @@
     <% @meis.each do |mei| %>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><%= mei.nome %></h3>
+            <h3 class="panel-title"><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %></h3> <!--mostra apenas o primeiro e o último nome -->
            </div>
            <div class="panel-body">
              <p><strong>Cnpj:</strong></p>
              <%= mei.cnpj %>
              <p><strong>Descricao da atividade:</strong></p>
-             <%= mei.descricao_atividade %>
+             <%= mei.descricao_atividade.capitalize %>
             <br>
             <div>
               <br>
