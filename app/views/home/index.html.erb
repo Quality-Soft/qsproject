@@ -27,7 +27,7 @@
         <div class="thumbnail">
           <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
           <div class="caption">
-            <center><h3><%= mei.nome.split(" ").first %> <%= mei.nome.split(" ").last %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
+            <center><h3><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
             <p><strong>Descricao da atividade:</strong></p>
             <%= mei.descricao_atividade %>
             <br><hr>
