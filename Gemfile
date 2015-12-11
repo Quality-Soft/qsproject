@@ -44,7 +44,6 @@ gem 'font-awesome-sass'
 group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem "rspec-rails", ">= 2.0.1"
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   
@@ -54,13 +53,21 @@ group :development do
   gem 'sqlite3'
 end
 
+group :development, :test do
+    gem 'factory_girl_rails'
+    gem "rspec-rails", ">= 2.0.1"
+    gem 'capybara'
+    gem 'guard-rspec'
+    gem 'spring-commands-rspec'
+    gem 'vcr'
+end
+
+
 group :test do
    gem 'cucumber-rails', :require => false
    gem 'database_cleaner'
    gem 'launchy'
-   gem 'guard-rspec'
-   gem 'factory_girl_rails'
-   gem "rspec-rails", ">= 2.0.1"
+   gem 'webmock'
 end
 
 
