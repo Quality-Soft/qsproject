@@ -1,7 +1,4 @@
-<p id="notice"><%= notice %></p>
-
 <hr>
-
 <div class="row">
   <div class="col-md-2">
   </div>
@@ -12,24 +9,23 @@
         <h3 class="panel-title"><%= @mei.nome.split(" ").first.capitalize %> <%= @mei.nome.split(" ").last.capitalize %></h3> <!-- a primeira letra de cada palavra maiúscula -->
       </div>
       <div class="panel-body">
-        <div class="row">
+        <div class="col">
           <div class="col-md-2">
             <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
           </div>
           <div class="col-md-10">
-            
             <p>
-              <strong>Nome:</strong>
+              <label>Nome:</label>
               <%= @mei.nome.split(" ").first.capitalize %> <%= @mei.nome.split(" ").last.capitalize %> <!-- a primeira letra de cada palavra maiúscula -->
             </p>
             
             <p>
-              <strong>Razao social:</strong>
+              <label>Razao social:</label>
               <%= @mei.razao_social.split.map(&:capitalize).join(' ') %> <!-- a primeira letra de cada palavra maiúscula -->
             </p>
             
             <p>
-              <strong>Cnpj:</strong>
+              <label>Cnpj:</label>
               <%= @mei.cnpj %>
             </p>
 
@@ -37,14 +33,14 @@
             é algo que fica vizível quando observamos o código html no navegador. -->
 
             <p>
-              <strong>Descricao atividade:</strong>
+              <label>Descricao atividade:</label>
               <%= @mei.descricao_atividade.capitalize %> <!-- apenas a primeira letra maiúscula -->
             </p>
 
 
 
             <p>
-              <strong>Contatos:</strong>
+              <label>Contatos:</label>
               <br><!-- @contatos é uma variável que recebe os contatos no controlador, a partir de @meis.phone_numbers -->
                 <% @contatos.each do |m| %> 
                     <p><%= m.number %></p>
@@ -53,12 +49,12 @@
             
             
             <p>
-              <strong>Email:</strong>
+              <label>Email:</label>
               <%= @mei.email %>
             </p>
             
             <p>
-              <strong>Endereço:</strong>
+              <label>Endereço:</label>
                 <% @endereco_comercial.each do |m| %> 
                     Rua <%= m.rua %>, <%= m.bairro %>, <%= m.cidade %>
                 <% end %>
@@ -73,10 +69,6 @@
       </div>
     </div>
   </div>
-
-
-
-
   <div class="col-md-2">
   </div>
 </div>
@@ -84,18 +76,20 @@
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-      <%= link_to '<< Voltar', meis_path, class:'btn btn-sm btn-info' %>
+      <%= link_to 'Voltar', meis_path, class:'btn btn-sm btn-info' %>
   </div>
   <div class="col-md-2"></div>
 </div>
+
+
+
+
 
 <!-- Comentarios -->
 <hr>
 
 <div class="row">
-  <div class="col-md-2">
-  </div>
-  
+  <div class="col-md-2"></div>
   <div class="col-md-8">
     <h3>Veja o que estão falando sobre <%= @mei.nome.split(" ").first.capitalize %>:</h3>
     <% if @comments.empty? %>
@@ -110,18 +104,14 @@
             </div>
             <div class="panel-body">
               <%= comentario.description %>
-              <br>
-              <br>
+              <br><br>
               <i>por <%= comentario.name %></i>
             </div>
           </div>
         <% end %>
     <% end %>
   </div>
-  
-  <div class="col-md-2">
-  </div>
-  
+  <div class="col-md-2"></div>
 </div>
 
 <!-- Postar Comentarios -->
@@ -133,31 +123,29 @@
   
   <div class="col-md-8">
     <h2>Adicione um comentario:</h2>
-    <%= form_for([@mei, @mei.comments.build]) do |f| %>
-      <div class="field">
-        <%= f.label :name %><br />
-        <%= f.text_field :name %>
-      </div>
-      <div class="field">
-        <%= f.label :title %><br />
-        <%= f.text_area :title %>
-      </div>
-      <div class="field">
-        <%= f.label :description %><br />
-        <%= f.text_area :description %>
-      </div>
-      <div class="actions">
-        <%= f.submit %>
-      </div>
-    <% end %>
-    
-    <!--< %= form_for(@comment) do |f| %>
-      Nome < %= f.text_field :name %><br />
-      Título : < %= f.text_field :title %><br />
-      Descricao: < %= f.text_area :description %><br />
-      mei_id : < %= f.text_field :mei_id %><br />
-    < %= f.submit %>
-    < % end %>-->
+        <%= form_for([@mei, @mei.comments.build]) do |f| %>
+          <form class="form-horizontal">
+            <div class="control-group">
+              <div class="controls">
+                <%= f.text_field :name, class:"form-control", placeholder: "Nome" %>
+              </div> 
+            </div>
+            <!-- ------- -->
+            </br>
+            <!-- ------- -->
+            <div class="control-group">
+              <div class="controls">
+                <%= f.text_area :description, size: "60x12", class:"form-control", placeholder: "Digite seu comentário" %>
+              </div> 
+            </div>
+            <!-- ------- -->
+            </br>
+            <!-- ------- -->
+            <div class="actions"> 
+              <%= f.submit 'Enviar', :class => 'btn btn-primary' %>
+            </div>
+          </form>
+      <% end %>
   </div>
   
 </div>
