@@ -13,7 +13,7 @@
           <div class="col-md-2">
             <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-6">
             <p>
               <label>Nome:</label>
               <%= @mei.nome.split(" ").first.capitalize %> <%= @mei.nome.split(" ").last.capitalize %> <!-- a primeira letra de cada palavra maiúscula -->
@@ -64,6 +64,19 @@
               
                <!-- < %= link_to 'Editar', edit_mei_path(@mei), class:'btn btn-sm btn-info' % > Será necessário o usuário logar para editar o mei-->
             </p>
+          </div>
+          <div class="col-md-4">
+            <% if current_user %>
+              Visual Effects: <%= rating_for @mei, "visual_effects" %>
+              <br>
+              Original Score: <%= rating_for @mei, "original_score" %>
+              <br>
+              Director: <%= rating_for @mei, "original_score" %>
+              <br>
+              Custome Design: <%= rating_for @mei, "custome_design" %>
+            <% else %>
+              <center><p>Faça login para avaliar este MEI.</center>
+            <% end %>
           </div>
         </div>
       </div>
