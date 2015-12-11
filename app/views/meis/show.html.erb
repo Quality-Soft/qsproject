@@ -67,12 +67,6 @@
           </div>
           <div class="col-md-4">
             <% if current_user %>
-              Visual Effects: <%= rating_for @mei, "visual_effects" %>
-              <br>
-              Original Score: <%= rating_for @mei, "original_score" %>
-              <br>
-              Director: <%= rating_for @mei, "original_score" %>
-              <br>
               Custome Design: <%= rating_for @mei, "custome_design" %>
             <% else %>
               <center><p>Faça login para avaliar este MEI.</center>
