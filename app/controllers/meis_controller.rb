@@ -1,6 +1,8 @@
 class MeisController < ApplicationController
   before_action :set_mei, only: [:show, :edit, :update, :destroy]
   
+  before_action :authenticate_user!, only: :new
+  
   # GET /meis
   # GET /meis.json
   def index

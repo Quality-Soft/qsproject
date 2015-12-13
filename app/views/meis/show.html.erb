@@ -67,9 +67,9 @@
           </div>
           <div class="col-md-4">
             <% if current_user %>
-              Custome Design: <%= rating_for @mei, "custome_design" %>
+              <center>Classifique este MEI <%= rating_for @mei, "custome_design" %></center>
             <% else %>
-              <center><p>Faça login para avaliar este MEI.</center>
+              <center><p class="alert alert-info">Faça login para avaliar este MEI.</center>
             <% end %>
           </div>
         </div>
@@ -80,6 +80,7 @@
   </div>
 </div>
 
+<!-- btn voltar -->
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
@@ -87,10 +88,6 @@
   </div>
   <div class="col-md-2"></div>
 </div>
-
-
-
-
 
 <!-- Comentarios -->
 <hr>
@@ -107,12 +104,12 @@
         <% @comments.each do |comentario| %>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><%= comentario.title %></h3>
             </div>
             <div class="panel-body">
               <%= comentario.description %>
               <br><br>
-              <i>por <%= comentario.name %></i>
+              <i>por <%= comentario.name %></i> <!-- esta lógica não está correta, visto que não é necessário 
+                  colocar o nome quando o usuário já estiver logado... -->
             </div>
           </div>
         <% end %>
@@ -123,11 +120,9 @@
 
 <!-- Postar Comentarios -->
 <hr>
-
 <div class="row">
   <div class="col-md-2">
   </div>
-  
   <div class="col-md-8">
     <h2>Adicione um comentario:</h2>
         <%= form_for([@mei, @mei.comments.build]) do |f| %>
@@ -148,11 +143,14 @@
             <!-- ------- -->
             </br>
             <!-- ------- -->
-            <div class="actions"> 
-              <%= f.submit 'Enviar', :class => 'btn btn-primary' %>
-            </div>
+            <% if current_user %>
+                <div class="actions"> 
+                  <%= f.submit 'Enviar', :class => 'btn btn-primary' %>
+                </div>
+            <% else %>
+                <center><p class="alert alert-info">Faça login para comentar este MEI.</center>
+            <% end %>
           </form>
       <% end %>
   </div>
-  
 </div>
