@@ -20,6 +20,22 @@ require 'rails_helper'
 
 RSpec.describe CommentsController, type: :controller do
 
+
+  describe "anonymous user" do
+    before :each do
+      # This simulates an anonymous user
+      login_with nil
+    end
+
+    it "should let a user see all the posts" do
+    login_with create( :user )
+    get :index
+    expect( response ).to render_template( :index )
+  end
+  end
+end
+
+
   # This should return the minimal set of attributes required to create a valid
   # Comment. As you add validations to Comment, be sure to
   # adjust the attributes here as well.
