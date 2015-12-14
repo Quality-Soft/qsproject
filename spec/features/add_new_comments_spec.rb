@@ -25,3 +25,4 @@ RSpec.feature "AddNewComments", :type => :feature do
     expect( Post.first.name).to eq( "Comments title")
   end
 end
+
