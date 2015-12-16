@@ -1,6 +1,6 @@
 class Mei < ActiveRecord::Base
     
-    ratyrate_rateable 'visual_effects', 'original_score', 'custome_design' #permite criar uma associação entre o mei e a avaliação ~> http://www.sitepoint.com/ratyrate-add-rating-rails-app/
+    ratyrate_rateable 'cnpj' #permite criar uma associação entre o mei e a avaliação ~> http://www.sitepoint.com/ratyrate-add-rating-rails-app/
     
     validates_uniqueness_of :cnpj, message: " já cadastrado"
     validates_uniqueness_of :razao_social, message: " já cadastrada"
