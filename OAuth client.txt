@@ -1,0 +1,4 @@
+client ID
+623587642437-e29jr1hd3rq5idme9l3dj76e2uk07gd5.apps.googleusercontent.com
+client secret
+B69Wd9HcG12pOiIAeLWlin0J
