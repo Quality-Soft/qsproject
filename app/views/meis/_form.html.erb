@@ -1,14 +1,11 @@
-
 <div class="row">
   <div class="col-md-2">
   </div>
-  
   <div class="col-md-8">
   <%= form_for(@mei) do |f| %>
     <% if @mei.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@mei.errors.count, "error") %> prohibited this mei from being saved:</h2>
-
       <ul>
         <% @mei.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -16,41 +13,37 @@
       </ul>
     </div>
     <% end %>
-    
-    
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Seus dados</h3>
       </div>
-      
       <div class="panel-body">
-          <!--div para agrupar os dados pessoais e da org. -->
-            <!--Acho que aqui deveria conter uma div para agrupar o nome e o sexo... -->
-            <div class="field">
-              <%= f.label "Seu nome" %><br>
-              <%= f.text_field :nome, class:'form-control'%>
-            </div>
-            <div class="field">
-              <%= f.label :sexo %><br>
-              <%= f.select(:sexo, ["Masculino", "Feminino"], class:'form-control') %>
-              <!-- < % = f.text_field :sexo %> --
-            </div>
-            <!--Fim da div-->
-          <div class="field">
-            <%= f.label "Razão Social" %><br>
-            <%= f.text_field :razao_social, class:'form-control' %>
-          </div>
+        <!--div para agrupar os dados pessoais e da org. -->
+        <!--Acho que aqui deveria conter uma div para agrupar o nome e o sexo... -->
+        <div class="field">
+          <%= f.label "Seu nome" %><br>
+          <%= f.text_field :nome, class:'form-control'%>
+        </div>
+        <div class="field">
+          <%= f.label :sexo %><br>
+          <%= f.select(:sexo, ["Masculino", "Feminino"], class:'form-control') %>
+          <!-- < % = f.text_field :sexo %> -->
+        </div>
+        <!--Fim da div-->
+        <div class="field">
+          <%= f.label "Razão Social" %><br>
+          <%= f.text_field :razao_social, class:'form-control' %>
+        </div>
           
-          <div class="field">
-            <%= f.label "Descrição da Atividade" %><br>
-            <%= f.text_area :descricao_atividade, class:'form-control' %>
-          </div>
+        <div class="field">
+          <%= f.label "Descrição da Atividade" %><br>
+          <%= f.text_area :descricao_atividade, class:'form-control' %>
+        </div>
         <div class="field">
           <%= f.label "CNPJ" %><br>
           <%= f.text_field :cnpj, class:'form-control' %>
         </div>
         <br>
-        
         <br>
         <div class="field">
           <%= f.label "CPF" %><br>
@@ -61,14 +54,11 @@
           <%= f.label "RG" %><br>
           <%= f.text_field :rg, class:'form-control' %>
         </div>
-
         <br>
         <div class="field">
           <%= f.label :email %><br>
           <%= f.text_field :email, class:'form-control' %>
         </div>
-        
-        
         <!--Nested form for phone_numbers-->
         <div class="field"><br>
           <%= f.fields_for :phone_numbers do |builder| %>
@@ -76,7 +66,6 @@
           <%= builder.telephone_field(:number)%>
           <% end %>
         </div>
-        
         <!--Nested form for  business_address-->
         <div class="field"><br>
           <%= f.fields_for :business_address do |builder| %>
@@ -92,8 +81,6 @@
           <%= builder.text_field :cidade, class:'form-control' %>
           <% end %>
         </div>
-        
-        
         <!--Nested form for home_address -->
         <div class="field"><br>
           <%= f.fields_for :home_address do |builder| %>
@@ -109,8 +96,6 @@
           <%= builder.text_field :cidade, class:'form-control' %>
           <% end %>
         </div>
-        
-        
         <div class="field"><br>
           <%= f.fields_for :acts do |builder| %>
           <%= builder.label "Área de atuação" %><br>
@@ -119,8 +104,6 @@
           <!--como era: #select :occupation_id, options_for_select([['Serviço', 1], ['Comércio', 2]]), include_blank: true %> -->
           <% end %>
         </div>
-        
-        
         <div class="field"><br>
           <%= f.fields_for :works do |builder| %>
           <%= builder.label "Principal Atividade" %><br>
@@ -129,7 +112,6 @@
           <!-- #collection_select("o campo em que vou gravar o parâmetro", o modelo que vou pegar.all, o parâmetro que vou gravar, o que vou mostrar, prompt: true ==> inclue o campo em branco) -->
           <% end %>
         </div>
-      
         <br>
         <div class="actions">
           <%= f.submit 'Salvar', class:'btn btn- btn-info'%>
@@ -138,7 +120,6 @@
     </div>
   <% end %>
   </div>
-    
   <div class="col-md-2">
   </div>
 </div>
