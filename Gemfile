@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 #gem para a avaliação com estrelas
-gem 'ratyrate'
 #gem para autentição via google
 gem "omniauth-google-oauth2"
 gem 'omniauth'
