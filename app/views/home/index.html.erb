@@ -1,147 +1,145 @@
 <!--Área de pesquisa da Home-->
-<div class="jumbotron">
-  <div class="container" align="center">
-    <img alt="mei" src="/assets/bonecomeis.png" />
-    <h1 style="color: #104185">Encontre os MEIs de forma rápida e fácil</h1>
-    <p style="color: #104185">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na Cidade do Recife</p>
-    <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form">
-        <div class="row" align="center">
-          <div class="col-md-12">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <div align="center">
+          <%= image_tag("bonecomeis.png", alt:"MEI") %>
+        </div>
+        <h1 style="color: #104185" align="center">Encontre os MEIs de forma rápida e fácil</h1>
+        <p style="color: #104185" align="center">Ache os serviços ou produtos que você precisa e que estão sendo oferecidos pelos MEIs na Cidade do Recife</p>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form">
             <div class="form-group">
               <center><%= render "layouts/search_form" %></center>
             </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+          </form>
+        </div><!-- /.navbar -->
+      </div><!-- /.Jumbotron -->
+    </div><!-- /col-md-12 -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
 
 <!--Apresentação dos MEI's pesquisados/cadastrados-->
-
-<div class="row">
-  <% if @meis.present? %>
-    <% @meis.each do |mei| %>
-      <div class="col-xs-6 col-md-3">
-        <div class="thumbnail">
-          <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
-          <div class="caption">
-            <center><h3><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
-            <p><strong>Descricao da atividade:</strong></p>
-              <%= truncate(mei.descricao_atividade.capitalize, :length => 25) %> 
-            <br><hr>
-            <center><%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%></center>
+<div class="container">
+  <div class="row">
+    <% if @meis.present? %>
+      <% @meis.each do |mei| %>
+        <div class="col-xs-6 col-md-3">
+          <div class="thumbnail">
+            <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
+            <div class="caption">
+              <center><h3><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
+              <p><strong>Descricao da atividade:</strong></p>
+                <%= truncate(mei.descricao_atividade.capitalize, :length => 25) %> 
+              <br><hr>
+              <center><%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%></center>
+            </div>
           </div>
+        </div>
+      <% end %>
+      <!--Resultado do Paginate-->
+      <div class="col-md-6 col-md-offset-4">
+         <%= will_paginate @meis, renderer: BootstrapPagination::Rails %>
+      </div>
+    <% elsif @meis == [] %>
+      <!--Mensagem de erro no caso de existir resultado-->
+      <div class="col-md-6 col-md-offset-3">
+        <script>
+          function funcao1(){
+            alert("Não encontramos nenhum mei para esta pesquisa.");
+          }
+          funcao1();
+        </script>
+        <div class="alert alert-danger">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
         </div>
       </div>
     <% end %>
-    <div class="col-md-6 col-md-offset-4">
-       <%= will_paginate @meis, renderer: BootstrapPagination::Rails %>
-    </div>
-    
-    
-  <% elsif @meis == [] %>
-    <!--Mensagem de erro no caso de existir resultado-->
-    <div class="col-md-6 col-md-offset-3">
-      <script>
-        function funcao1(){
-          alert("Não encontramos nenhum mei para esta pesquisa.");
-        }
-        funcao1();
-      </script>
-    <div class="alert alert-danger">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
-    </div>
-    </div>
-  <% end %>
-</div>
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
 
 <!--Carousel-->
 <div class="container">
-<div class="row">
-  <div class="col-xs-8">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <%= link_to image_tag("SalaEmpreendedor.png", class:"first-slide", alt:"First slide"), "http://www2.recife.pe.gov.br/servico/sala-do-empreendedor-0", width: "100%"%>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Sala do empreendedor</h1>
-              <p>Descubra como se tornar um MEI e ajudar a sua cidade a crescer junto com as pessoas.</p>
+  <div class="row">
+    <div class="col-xs-8">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= link_to image_tag("SalaEmpreendedor.png", class:"first-slide", alt:"First slide"), "http://www2.recife.pe.gov.br/servico/sala-do-empreendedor-0", width: "100%"%>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Sala do empreendedor</h1>
+                <p>Descubra como se tornar um MEI e ajudar a sua cidade a crescer junto com as pessoas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <%= link_to image_tag("PCR.png", class:"second-slide", alt:"Second slide", width: "100%"), "http://www2.recife.pe.gov.br/"%>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Prefeitura do Recife</h1>
+                <p>Veja as novidades que estão sendo ofertadas pela Prefeitura do Recife</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <%= link_to image_tag("CidadeRecife.jpg", class:"third-slide", alt:"Third slide", width: "100%"), "#"%>
+            <div class="container">
+              <div class="carousel-caption">
+                
+              </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <%= link_to image_tag("PCR.png", class:"second-slide", alt:"Second slide", width: "100%"), "http://www2.recife.pe.gov.br/"%>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Prefeitura do Recife</h1>
-              <p>Veja as novidades que estão sendo ofertadas pela Prefeitura do Recife</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <%= link_to image_tag("CidadeRecife.jpg", class:"third-slide", alt:"Third slide", width: "100%"), "#"%>
-          <div class="container">
-            <div class="carousel-caption">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel -->
-  </div>
-
-  <!--Div "Quer ser divulgado por nós?"-->
-  <div id="DivHome" class="col-xs-4 hidden-xs hidden-sm" align="center" style="background-color: #FDE01B">
-    <h2 style="color:#ffffff ">Quer ser divulgado por nós?</h2>
-    <p style="color: #ffffff ">Descubra como fazer parte do mei-A-MEI</p>
-    <i class="fa fa-university fa-4x"></i>
-    <i class="fa fa-angle-double-right fa-4x"></i>
-    <i class="fa fa-file-text-o fa-4x"></i>
-    <i class="fa fa-angle-double-right fa-4x"></i>
-    <i class="fa fa-check fa-4x"></i>
-    </br>
-    </br>
-    <p><a class="btn btn-primary" href="#" role="button">Acesse já <i class="fa fa-arrow-right"></i></a></p>
-  </div>
-  
-  <!--Div "Ainda não é formalizado?"-->
-  <div id="DivHome" class="col-xs-4 hidden-xs hidden-sm" align="center" style="background-color: #FDE01B">
-    <h2 style="color: #ffffff">Ainda não é formalizado?</h2>
-    <i class="fa fa-male fa-4x"></i>
-    <p style="color: #ffffff">Descubra como se tornar um MEI, seus benefícios e como participar do mei-A-MEI.</p>
-    <p><a class="btn btn-primary" href="#" role="button">Acesse já <i class="fa fa-arrow-right"></i></a></p>
-  </div>
-  
-  </div>
-</div>
+      </div><!-- /.carousel -->
+    </div><!-- /.col-xs-8 -->
+    <!--Div "Quer ser divulgado por nós?"-->
+    <div id="DivHome" class="col-xs-4 hidden-xs hidden-sm" align="center" style="background-color: #FDE01B">
+      <h2 style="color:#ffffff ">Quer ser divulgado por nós?</h2>
+      <p style="color: #ffffff ">Descubra como fazer parte do mei-A-MEI</p>
+      <i class="fa fa-university fa-4x"></i>
+      <i class="fa fa-angle-double-right fa-4x"></i>
+      <i class="fa fa-file-text-o fa-4x"></i>
+      <i class="fa fa-angle-double-right fa-4x"></i>
+      <i class="fa fa-check fa-4x"></i>
+      </br>
+      </br>
+      <p><a class="btn btn-primary" href="#" role="button">Acesse já <i class="fa fa-arrow-right"></i></a></p>
+    </div>
+    <!--Div "Ainda não é formalizado?"-->
+    <div id="DivHome" class="col-xs-4 hidden-xs hidden-sm" align="center" style="background-color: #FDE01B">
+      <h2 style="color: #ffffff">Ainda não é formalizado?</h2>
+      <i class="fa fa-male fa-4x"></i>
+      <p style="color: #ffffff">Descubra como se tornar um MEI, seus benefícios e como participar do mei-A-MEI.</p>
+      <p><a class="btn btn-primary" href="#" role="button">Acesse já <i class="fa fa-arrow-right"></i></a></p>
+    </div>
+  </div><!-- /.row -->
+</div><!-- /.container -->
 
 
 <!--HASHTAG do mei-A-MEI-->
 <div class="row">
   <div class="footer-search">
-    <div class="container">
-      <div class="col-xs-12" align="center"><h2 style="color: #104185;"><strong>#SOU</strong>RECIFE<strong>MEIAMEI</strong></h2></div>
-    </div>
+    <div class="col-xs-12" align="center"><h2 style="color: #104185;"><strong>#SOU</strong>RECIFE<strong>MEIAMEI</strong></h2></div>
   </div>
 </div>
-
 <!--Div "Ainda não é MEI?"-->
 <div class="row">
   <div class="col-xs-12" align="center" style="background-color: #104185">
     <h2 style="color: #FDE01B">Ainda não é MEI?</h2>
     <p style="color: #FDE01B">Descubra como se tornar um MEI, seus benebícios e como participar do mei-MEI.</p>
     </br>
-      <p><a class="btn btn-primary" href="#" role="button">Descobrir <i class="fa fa-arrow-right"></i></a></p>
+    <p><a class="btn btn-primary" href="#" role="button">Descobrir <i class="fa fa-arrow-right"></i></a></p>
   </div>
 </div>
+
 

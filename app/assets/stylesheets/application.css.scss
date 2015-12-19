@@ -17,6 +17,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 /*# sourceMappingURL=bootstrap.min.css.map */
 /*# sourceMappingURL=bootstrap.min.css.map */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 /*!
@@ -6853,6 +6855,12 @@ button.close {
   margin-top: 20px;
   padding-top: 20px;
   box-shadow: 5px 5px 15px #888888;
+}
+#meiResults{
+  margin-top: 10px;
+}
+.DivAplication{
+  margin-top: 35px;
 }
 #listMap ul li{
   font-size: 1.5em; 

@@ -1,63 +1,54 @@
-<!-- remoção do formulário de consulta  -->
-<div class="row">
-  <div class="container">
-    <div class="col-md-1"></div>
-      <div class="col-md-11">
+<!--Formulário de consulta-->
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
         <div class="navbar-form" align = "center">
-          <div class="form-group" align = "center">
+          <div class="form-group">
             <%= render "layouts/search_form" %>
           </div>
         </div>
       </div>
-    <div class="col-md-1"></div>
   </div>
 </div>
 </br>
-              
-<div class="row">
-  <div class="col-md-1">
-  </div>
-  
-  <div class="col-md-10">
-    <% if @meis == [] %>
-        <div>
-          <div>
-          <script>
+<!--Apresentação dos MEI's pesquisados/cadastrados-->
+<div id="meiResults" class="container">
+  <div class="row">
+    <% if @meis.present? %>
+      <% @meis.each do |mei| %>
+        <div class="col-xs-6 col-md-3">
+          <div class="thumbnail">
+            <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
+            <div class="caption">
+              <center><h3><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
+              <p><strong>Descricao da atividade:</strong></p>
+                <%= truncate(mei.descricao_atividade.capitalize, :length => 25) %> 
+              <br><hr>
+              <center><%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%></center>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <!--Resultado do Paginate-->
+      <div class="col-md-6 col-md-offset-4">
+         <%= will_paginate @meis, renderer: BootstrapPagination::Rails %>
+      </div>
+    <% elsif @meis == [] %>
+      <!--Mensagem de erro no caso de existir resultado-->
+      <div class="col-md-6 col-md-offset-3">
+        <script>
           function funcao1(){
             alert("Não encontramos nenhum mei para esta pesquisa.");
           }
           funcao1();
-          </script>
-        <div>
-            <div class="alert alert-danger">
-              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-              <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
-            </div>
-          </div>
+        </script>
+        <div class="alert alert-danger">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Ops!</strong> Não encontramos nenhum mei para esta pesquisa.
         </div>
-    <% else %>
-      <% @meis.each do |mei| %>
-          <div class="col-xs-6 col-md-3">
-            <div class="thumbnail">
-              <%= image_tag("figureMEI.jpg", class:"img-rounded", alt:"MEIs") %>
-              <div class="caption">
-                <center><h3><%= mei.nome.split(" ").first.capitalize %> <%= mei.nome.split(" ").last.capitalize %> </h3></center> <!--mostra apenas o primeiro e o último nome -->
-                <p><strong>Descricao da atividade:</strong></p>
-                  <%= truncate(mei.descricao_atividade.capitalize, :length => 25) %>
-                <br><hr>
-                <center><%= link_to 'Mostrar Mais', mei, class: 'btn btn-sm btn-primary'%></center>
-              </div>
-            </div>
-          </div>
-      <% end %>
-        <div class="col-md-6 col-md-offset-4">
-           <%= will_paginate @meis, renderer: BootstrapPagination::Rails %>
-        </div>
+      </div>
     <% end %>
-    
-    </div>
-  <div class="col-md-1">
-  </div>
-</div>
+  </div><!-- /.row -->
+</div><!-- /.container -->
 <br>
 <hr>

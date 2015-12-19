@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 #gem para a avaliação com estrelas
-gem 'ratyrate'
-
+#gem para autentição via google
+gem "omniauth-google-oauth2"
+gem 'omniauth'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
