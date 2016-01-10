@@ -6851,9 +6851,13 @@ button.close {
  box-shadow: 5px 5px 15px #888888;
 }
 
-#DivHome{
+.divHome{
+  margin-bottom: 20px;
   margin-top: 20px;
-  padding-top: 20px;
+}
+.divHome2{
+  margin-bottom: 20px;
+  margin-top: 10px;
   box-shadow: 5px 5px 15px #888888;
 }
 #meiResults{
@@ -6872,6 +6876,10 @@ button.close {
 #listMap ul li a:hover{
   color: blue; 
 }
-
+.carouselHome {
+  background-color: #104185;
+  border-style: solid;
+  border-color: yellow;
+}
 
 /*# sourceMappingURL=bootstrap.css.map */
