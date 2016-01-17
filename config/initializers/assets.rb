@@ -8,4 +8,12 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( jquery.rating.pack.js )
+Rails.application.config.assets.precompile += %w( jquery-1.9.1.min.js )
+Rails.application.config.assets.precompile += %w( jquery.js )
+Rails.application.config.assets.precompile += %w( jquery.rating.css )
+Rails.application.config.assets.precompile += %w( star.gif )
+
+
+
+
