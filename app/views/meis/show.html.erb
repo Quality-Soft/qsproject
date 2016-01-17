@@ -65,6 +65,7 @@
           <div class="col-md-4">
             <% if current_user %>
               <center>Classifique este MEI</center>
+              <%= rating_for @mei, "cnpj" %>
             <% else %>
               <center><p class="alert alert-info">Faça login para avaliar este MEI.</center>
             <% end %>
