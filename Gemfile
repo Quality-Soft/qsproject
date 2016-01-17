@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 #gem para a avaliação com estrelas
+gem 'ratyrate'
 #gem para autentição via google
 gem "omniauth-google-oauth2"
 gem 'omniauth'
@@ -34,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Use gem devise for autentication
 #gem 'devise'
-gem 'devise', '~> 3.5', '>= 3.5.2'
+# gem 'devise', '~> 3.5', '>= 3.5.2'
 
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'will_paginate', '~> 3.0.6' 
