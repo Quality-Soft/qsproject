@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
 
 #gem para a avaliação com estrelas
-<<<<<<< HEAD
-gem 'ratyrate'
-=======
 gem 'jquery-star-rating-rails'
->>>>>>> master
+gem 'ratyrate'
 #gem para autentição via google
 gem "omniauth-google-oauth2"
 gem 'omniauth'
