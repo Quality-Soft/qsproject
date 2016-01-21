@@ -6853,9 +6853,13 @@ button.close {
  box-shadow: 5px 5px 15px #888888;
 }
 
-#DivHome{
+.divHome{
+  margin-bottom: 0px;
   margin-top: 20px;
-  padding-top: 20px;
+}
+.divHome2{
+  margin-bottom: 20px;
+  margin-top: 10px;
   box-shadow: 5px 5px 15px #888888;
 }
 #meiResults{
@@ -6874,6 +6878,7 @@ button.close {
 #listMap ul li a:hover{
   color: blue; 
 }
+<<<<<<< HEAD
 /* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
 div.rating-cancel,div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
 div.rating-cancel,div.rating-cancel a{background:image_url("delete.gif") no-repeat 0 -16px}
@@ -6886,5 +6891,12 @@ div.star-rating-readonly a{cursor:default !important}
 /* Partial Star CSS */
 div.star-rating{background:transparent!important;overflow:hidden!important}
 /* END jQuery.Rating Plugin CSS */
+=======
+.carouselHome {
+  background-color: #104185;
+  border-style: solid;
+  border-color: yellow;
+}
+>>>>>>> master
 
 /*# sourceMappingURL=bootstrap.css.map */
