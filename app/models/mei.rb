@@ -1,5 +1,7 @@
 class Mei < ActiveRecord::Base
     
+    ratyrate_rateable "cnpj"
+    
     validates_uniqueness_of :cnpj, message: " já cadastrado"
     validates_uniqueness_of :razao_social, message: " já cadastrada"
     validates_uniqueness_of :cpf, message: " já cadastrado"
