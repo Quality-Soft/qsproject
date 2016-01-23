@@ -65,15 +65,12 @@
           <div class="col-md-4">
             <% if current_user %>
               <center>Classifique este MEI</center>
-<<<<<<< HEAD
               <%= rating_for @mei, "cnpj" %>
-=======
               <input name="star1" type="radio" class="star"/> 
               <input name="star1" type="radio" class="star"/> 
               <input name="star1" type="radio" class="star"/> 
               <input name="star1" type="radio" class="star"/> 
               <input name="star1" type="radio" class="star"/>
->>>>>>> master
             <% else %>
               <center><p class="alert alert-info">Faça login para avaliar este MEI.</center>
             <% end %>
